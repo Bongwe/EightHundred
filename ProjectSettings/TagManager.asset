@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Level1Boss2
+  - Damage2Smoke
+  - door
+  - Level2Container
+  - shotgunBullet
+  - enemyDeathDust
+  - ground
+  - Life1
+  - ExplosionFX
+  - enemyDeathRing
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -11,7 +22,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
@@ -10,25 +11,28 @@ public class Gun : MonoBehaviour
 	public AudioClip[] gunSound;				// Array of clips for when the player shoots.
 	public AudioClip themeSong;
 
-	private PlayerControl playerCtrl;		// Reference to the PlayerControl script.
+	public PlayerControl playerCtrl;		// Reference to the PlayerControl script.
 	//private Animator anim;					// Reference to the Animator component.
 
 	public Bullets gameController;
 	public bool hasGun = false;
 	private int spwanDistance  = 1;
 
+	private bool isShooting = false;
+	private bool isBombing = false;
+
 	void Awake()
 	{
 		// Setting up the references.
 		//anim = transform.root.gameObject.GetComponent<Animator>();
-		playerCtrl = transform.root.GetComponent<PlayerControl>();
+		//playerCtrl = transform.root.GetComponent<PlayerControl>();
 		gameController.amoLeft = ammunition;
 	}
 
 	void Update ()
 	{
 		// If the fire button is pressed...
-		if(Input.GetButtonDown("Fire1") && hasGun && ammunition > 0)
+		if(isShooting || isBombing && hasGun && ammunition > 0)
 		{
 			// ... set the animator Shoot trigger parameter and play the audioclip.
 			//anim.SetTrigger("Shoot");
@@ -84,8 +88,21 @@ public class Gun : MonoBehaviour
 			}
 		}
 		else if (Input.GetButtonDown("Fire1") && hasGun && ammunition == 0)
-			AudioSource.PlayClipAtPoint(gunSound[1], transform.position);
+			AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
 
+		isShooting = false;
+		isBombing = false;
+
+	}
+
+	public void shoot()
+    {
+		isShooting = true;
+    }
+
+	public void bomb()
+	{
+		isBombing = false;
 	}
 
 

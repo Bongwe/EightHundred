@@ -15,6 +15,7 @@ TagManager:
   - ExplosionFX
   - enemyDeathRing
   - Bullet
+  - Shack
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: PlayersLayer
+    uniqueID: 735323391
+    locked: 0
+  - name: ShacksLayer
+    uniqueID: 1043870131
     locked: 0

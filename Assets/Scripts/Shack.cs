@@ -76,8 +76,8 @@ public class Shack : MonoBehaviour
 
 	public void playParticleSystem(ParticleSystem particleSystem )
 	{
-		particleSystem.transform.position = transform.position;
-		particleSystem.Play();
+		//particleSystem.transform.position = transform.position;
+		//particleSystem.Play();
 	}
 
 	public void showDamageOnShack()
@@ -153,11 +153,11 @@ public class Shack : MonoBehaviour
 	{
 		
 		// Set the explosion effect's position to the bomb's position and play the particle system.
-		explosionFX.transform.position = transform.position;
-		explosionFX.Play();
+		//explosionFX.transform.position = transform.position;
+		//explosionFX.Play();
 		
 		// Instantiate the explosion prefab.
-		Instantiate(explosion,transform.position, Quaternion.identity);
+		//Instantiate(explosion,transform.position, Quaternion.identity);
 		
 		// Play the explosion sound effect.
 		AudioSource.PlayClipAtPoint(boom, transform.position);

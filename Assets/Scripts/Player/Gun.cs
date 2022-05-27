@@ -32,7 +32,7 @@ public class Gun : MonoBehaviour
 	void Update ()
 	{
 		// If the fire button is pressed...
-		if(isShooting || isBombing && hasGun && ammunition > 0)
+		if( (isShooting || isBombing) && hasGun && ammunition > 0)
 		{
 			// ... set the animator Shoot trigger parameter and play the audioclip.
 			//anim.SetTrigger("Shoot");
@@ -49,7 +49,7 @@ public class Gun : MonoBehaviour
 			{
 				Rigidbody2D bulletInstance;
 				
-				if(weapon.tag == "Bomb")
+				if(isBombing && weapon.tag == "Bomb")
 				{
 					bulletSpawnPosition.x = bulletSpawnPosition.x + spwanDistance;
 					
@@ -57,7 +57,7 @@ public class Gun : MonoBehaviour
 					bulletInstance = Instantiate(weapon, bulletSpawnPosition, Quaternion.Euler(new Vector3(0,0,180f))) as Rigidbody2D;
 					bulletInstance.velocity = new Vector2(cannonBallSpeed, 0);
 				}
-				else
+				else if (isShooting && weapon.tag == "Bullet")
 				{
 					// Otherwise instantiate the rocket facing left and set it's velocity to the left.
 					bulletInstance = Instantiate(weapon, transform.position, Quaternion.Euler(new Vector3(0,0,180f))) as Rigidbody2D;
@@ -70,7 +70,7 @@ public class Gun : MonoBehaviour
 			{
 				Rigidbody2D bulletInstance;
 
-				if(weapon.tag == "Bomb")
+				if (isBombing && weapon.tag == "Bomb")
 				{
 					bulletSpawnPosition.x = bulletSpawnPosition.x - spwanDistance;
 					
@@ -79,7 +79,7 @@ public class Gun : MonoBehaviour
 					bulletInstance.velocity = new Vector2(cannonBallSpeed * -1, 0);
 
 				}
-				else
+				else if (isShooting && weapon.tag == "Bullet")
 				{
 					// Otherwise instantiate the rocket facing left and set it's velocity to the left.
 					bulletInstance = Instantiate(weapon, transform.position, Quaternion.Euler(new Vector3(0,0,180f))) as Rigidbody2D;
@@ -102,7 +102,7 @@ public class Gun : MonoBehaviour
 
 	public void bomb()
 	{
-		isBombing = false;
+		isBombing = true;
 	}
 
 

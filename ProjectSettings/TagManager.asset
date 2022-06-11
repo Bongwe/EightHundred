@@ -16,6 +16,8 @@ TagManager:
   - enemyDeathRing
   - Bullet
   - Shack
+  - Ground
+  - Bomb
   layers:
   - Default
   - TransparentFX

@@ -20,19 +20,19 @@ public class BulletPickup : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		// If the player enters the trigger zone...
-		/*if(other.tag == "Player")
-		{
-			// ... play the pickup sound effect.
-			AudioSource.PlayClipAtPoint(pickupClip, transform.position);
-			
-			// Increase the number of bullets the player has.
-			gun.ammunition += numOfBullets; 
-			bullets.amoLeft += numOfBullets;
-			
-			// Destroy the crate.
-			Destroy(gameObject);
-		}*/
-		
-	}
+        // If the player enters the trigger zone...
+        if (other.tag == "Player")
+        {
+            // ... play the pickup sound effect.
+            AudioSource.PlayClipAtPoint(pickupClip, transform.position);
+
+            // Increase the number of bullets the player has.
+            gun.ammunition += numOfBullets;
+            bullets.amoLeft += numOfBullets;
+
+            // Destroy the crate.
+            Destroy(gameObject);
+        }
+
+    }
 }

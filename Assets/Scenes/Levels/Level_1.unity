@@ -257,7 +257,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5820454, guid: c70568057cf8d5a42b7357ab8030b782, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11401192, guid: c70568057cf8d5a42b7357ab8030b782, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c70568057cf8d5a42b7357ab8030b782, type: 3}
 --- !u!4 &122103379 stripped
 Transform:
@@ -525,6 +530,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287582648}
   m_CullTransparentMesh: 1
+--- !u!1 &296439169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 150602, guid: e840764c4da205d46832d8cb65e48af4, type: 3}
+  m_PrefabInstance: {fileID: 913415430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &296439171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296439169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff7d871a43ab304092f2ccc1af56167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupClip: {fileID: 8300000, guid: 27cbebf9d650249e5b032494eae5322c, type: 3}
+  healthIncrease: 100
+  playerHealth: {fileID: 1607131865}
+--- !u!1 &324930607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 104572, guid: c70568057cf8d5a42b7357ab8030b782, type: 3}
+  m_PrefabInstance: {fileID: 122103378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &324930609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324930607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66cd04322bbadf14d90c28abccd47441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupClip: {fileID: 8300000, guid: 0f0f1f98eb73543f6af74d3b8fb23f1f, type: 3}
+  numOFBombs: 5
 --- !u!1 &326115239
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326115239}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 154.39, y: -5.29, z: 16.56113}
+  m_LocalPosition: {x: 176.39, y: -5.29, z: 16.56113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1795857091}
@@ -741,9 +785,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bombLaid: 0
   bombCount: 0
-  bombsAway: {fileID: 0}
-  bomb: {fileID: 0}
+  bombsAway: {fileID: 8300000, guid: 2d487c0108565443ba2dea29b521e120, type: 3}
+  bomb: {fileID: 1206421234455121524, guid: 11ca580838f2fa04db5e31d3089437f3, type: 3}
   bombText: {fileID: 1193820809}
+  playerCtrl: {fileID: 326115245}
 --- !u!1 &420901367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1613,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 150602, guid: e840764c4da205d46832d8cb65e48af4, type: 3}
       propertyPath: m_Name
-      value: Life3
+      value: LifePickup
       objectReference: {fileID: 0}
     - target: {fileID: 409006, guid: e840764c4da205d46832d8cb65e48af4, type: 3}
       propertyPath: m_RootOrder
@@ -1614,7 +1659,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11467004, guid: e840764c4da205d46832d8cb65e48af4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e840764c4da205d46832d8cb65e48af4, type: 3}
 --- !u!4 &913415431 stripped
 Transform:
@@ -2414,7 +2460,7 @@ GameObject:
   - component: {fileID: 1715555280}
   m_Layer: 6
   m_Name: GroundPart
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2596,9 +2642,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 169518862}
-        m_TargetAssemblyTypeName: Gun, Assembly-CSharp
-        m_MethodName: bomb
+      - m_Target: {fileID: 326115247}
+        m_TargetAssemblyTypeName: LayBombs, Assembly-CSharp
+        m_MethodName: throwBomb
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2930,7 +2976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006860747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 79.2, y: -0.035902977, z: 0.0994}
+  m_LocalPosition: {x: 100.66, y: -0.035902977, z: 0.0994}
   m_LocalScale: {x: 1.8210149, y: 1.8210149, z: 1.8210149}
   m_Children: []
   m_Father: {fileID: 698448309}
@@ -2991,6 +3037,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11458416, guid: 7d6c34baa9ef3e548bed6ae62660fb5f, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 169518862}
+    - target: {fileID: 11458416, guid: 7d6c34baa9ef3e548bed6ae62660fb5f, type: 3}
+      propertyPath: bullets
+      value: 
+      objectReference: {fileID: 971778551}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d6c34baa9ef3e548bed6ae62660fb5f, type: 3}
 --- !u!4 &2059721434 stripped
@@ -3104,7 +3158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124528645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.9, y: -4.01, z: -11.652819}
+  m_LocalPosition: {x: 33.9, y: -4.05, z: -11.652819}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2059721434}

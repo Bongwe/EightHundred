@@ -19,7 +19,6 @@ public class Gun : MonoBehaviour
 	private int spwanDistance  = 1;
 
 	private bool isShooting = false;
-	private bool isBombing = false;
 
 	void Awake()
 	{
@@ -32,7 +31,7 @@ public class Gun : MonoBehaviour
 	void Update ()
 	{
 		// If the fire button is pressed...
-		if( (isShooting || isBombing) && hasGun && ammunition > 0)
+		if( isShooting && hasGun && ammunition > 0)
 		{
 			// ... set the animator Shoot trigger parameter and play the audioclip.
 			//anim.SetTrigger("Shoot");
@@ -45,19 +44,11 @@ public class Gun : MonoBehaviour
 
 
 			// If the player is facing right...
-			if(playerCtrl.facingRight)
+			if (playerCtrl.facingRight)
 			{
 				Rigidbody2D bulletInstance;
 				
-				if(isBombing && weapon.tag == "Bomb")
-				{
-					bulletSpawnPosition.x = bulletSpawnPosition.x + spwanDistance;
-					
-					// Otherwise instantiate the rocket facing left and set it's velocity to the left.
-					bulletInstance = Instantiate(weapon, bulletSpawnPosition, Quaternion.Euler(new Vector3(0,0,180f))) as Rigidbody2D;
-					bulletInstance.velocity = new Vector2(cannonBallSpeed, 0);
-				}
-				else if (isShooting && weapon.tag == "Bullet")
+				if (isShooting && weapon.tag == "Bullet")
 				{
 					// Otherwise instantiate the rocket facing left and set it's velocity to the left.
 					bulletInstance = Instantiate(weapon, transform.position, Quaternion.Euler(new Vector3(0,0,180f))) as Rigidbody2D;
@@ -70,16 +61,7 @@ public class Gun : MonoBehaviour
 			{
 				Rigidbody2D bulletInstance;
 
-				if (isBombing && weapon.tag == "Bomb")
-				{
-					bulletSpawnPosition.x = bulletSpawnPosition.x - spwanDistance;
-					
-					// Otherwise instantiate the rocket facing left and set it's velocity to the left.
-					bulletInstance = Instantiate(weapon, bulletSpawnPosition, Quaternion.Euler(new Vector3(0,0,180f))) as Rigidbody2D;
-					bulletInstance.velocity = new Vector2(cannonBallSpeed * -1, 0);
-
-				}
-				else if (isShooting && weapon.tag == "Bullet")
+				if (isShooting && weapon.tag == "Bullet")
 				{
 					// Otherwise instantiate the rocket facing left and set it's velocity to the left.
 					bulletInstance = Instantiate(weapon, transform.position, Quaternion.Euler(new Vector3(0,0,180f))) as Rigidbody2D;
@@ -91,7 +73,6 @@ public class Gun : MonoBehaviour
 			AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
 
 		isShooting = false;
-		isBombing = false;
 
 	}
 
@@ -99,11 +80,5 @@ public class Gun : MonoBehaviour
     {
 		isShooting = true;
     }
-
-	public void bomb()
-	{
-		isBombing = true;
-	}
-
 
 }

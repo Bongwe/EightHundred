@@ -46,6 +46,7 @@ public class Shack : MonoBehaviour
 	public void bombDamage(int damage)
 	{
 		HP = HP - damage;
+		showDamageOnShack();
 		if (HP <= 0 && !shackIsDestroyed) {
 			Explode ();
 			shackIsDestroyed = true;
@@ -109,7 +110,7 @@ public class Shack : MonoBehaviour
 			damageTwo = false;
 			damageThree = true;
 			
-		} else if (HP == damageFourHP) {
+		} else if (HP <= damageFourHP) {
 			anim.SetBool ("damageOne", false);
 			anim.SetBool ("damageTwo", false);
 			anim.SetBool ("damageThree", false);
@@ -161,6 +162,7 @@ public class Shack : MonoBehaviour
 		
 		// Play the explosion sound effect.
 		AudioSource.PlayClipAtPoint(boom, transform.position);
+		showDamageOnShack();
 
 
 		Collider2D[] cols = GetComponents<Collider2D>();

@@ -43,12 +43,7 @@ public class PistolPickup : MonoBehaviour
 			themeSong.playThemeSong(pistolThemeSong);
 			BulletText.amoLeft  = 30;
 			BulletText.UpdateText();
-			//bombText.bombsLeft = 5;
-			//bombText.UpdateText();
-
-			//BombText.text =
-			//PlayerBomb.add (pistolCannonGun);
-			// Destroy the crate.
+			
 			Destroy(gameObject);
 		}
 		

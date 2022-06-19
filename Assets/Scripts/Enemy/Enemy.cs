@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour, IEnemy
 		rigidbody2D = transform.GetComponent<Rigidbody2D>();
 		groundCheck = transform.Find("groundCheck");
 		playerCtrl = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
-		deathRing = GameObject.FindGameObjectWithTag("enemyDeathRing").GetComponent<ParticleSystem>();
+		//deathRing = GameObject.FindGameObjectWithTag("enemyDeathRing").GetComponent<ParticleSystem>();
 		//spawner = GameObject.FindGameObjectWithTag ("Spawner").GetComponent<Spawner>();;
 		//spawnPosition = GameObject.FindGameObjectWithTag("Spawner").transform.position;
 		//targetPosition.x = spawnPosition.x - randomDistance;
@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour, IEnemy
 		time += Time.deltaTime;	
 
 		if (HP <= 0 && !dead) {
-			playParticleSystem(deathRing);
+			//playParticleSystem(deathRing);
 			anim.SetBool ("walking", false);
 			anim.SetBool("dead", true);
 			currentTime = time;

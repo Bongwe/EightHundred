@@ -18,6 +18,8 @@ TagManager:
   - Shack
   - Ground
   - Bomb
+  - GroundCheck
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -26,8 +28,8 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
+  - Enemy
+  - EnemyGun
   - 
   - 
   - 

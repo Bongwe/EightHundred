@@ -57,9 +57,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: PlayersLayer
-    uniqueID: 735323391
+  - name: Background
+    uniqueID: 679645055
+    locked: 0
+  - name: Level
+    uniqueID: 1134957883
     locked: 0
   - name: ShacksLayer
     uniqueID: 1043870131
+    locked: 0
+  - name: Tokens
+    uniqueID: 1012830093
+    locked: 0
+  - name: New Layer
+    uniqueID: 1973697697
+    locked: 0
+  - name: Player
+    uniqueID: 735323391
+    locked: 0
+  - name: Shacks
+    uniqueID: 246926709
+    locked: 0
+  - name: Enemy
+    uniqueID: 2497063527
+    locked: 0
+  - name: Loot
+    uniqueID: 1954402159
+    locked: 0
+  - name: Ammunition
+    uniqueID: 901023397
     locked: 0

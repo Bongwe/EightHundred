@@ -78,6 +78,9 @@ TagManager:
   - name: Shacks
     uniqueID: 246926709
     locked: 0
+  - name: Fence
+    uniqueID: 2801854101
+    locked: 0
   - name: Enemy
     uniqueID: 2497063527
     locked: 0

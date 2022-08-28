@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour, IEnemy
 		//ren = transform.Find("body").GetComponent<SpriteRenderer>();
 		//frontCheck = transform.Find("frontCheck").transform;
 		rigidbody2D = transform.GetComponent<Rigidbody2D>();
-		groundCheck = transform.Find("groundCheck");
+		groundCheck = transform.Find("GroundCheck");
 		playerCtrl = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
 		//deathRing = GameObject.FindGameObjectWithTag("enemyDeathRing").GetComponent<ParticleSystem>();
 		//spawner = GameObject.FindGameObjectWithTag ("Spawner").GetComponent<Spawner>();;

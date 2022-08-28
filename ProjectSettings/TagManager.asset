@@ -20,6 +20,7 @@ TagManager:
   - Bomb
   - GroundCheck
   - Enemy
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
@@ -30,8 +31,8 @@ TagManager:
   - Ground
   - Enemy
   - EnemyGun
-  - 
-  - 
+  - Player
+  - EnemyBullet
   - 
   - 
   - 
@@ -89,4 +90,7 @@ TagManager:
     locked: 0
   - name: Ammunition
     uniqueID: 901023397
+    locked: 0
+  - name: EnemySquare
+    uniqueID: 2064152757
     locked: 0

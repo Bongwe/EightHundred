@@ -92,7 +92,7 @@ public class EnemyAI : ScriptableObject {
 		{
 			// Check if it has a rigidbody (since there is only one per enemy, on the parent).
 			Rigidbody2D rb = en.GetComponent<Rigidbody2D> ();
-			if ( rb.tag == "Player") {
+			if (rb != null && rb.tag == "Player") {
 				/*if(!shooting)
 					Shoot();*/
 				//Debug.Log ("Player in range");

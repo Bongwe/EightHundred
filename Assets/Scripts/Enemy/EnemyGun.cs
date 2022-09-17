@@ -29,9 +29,9 @@ public class EnemyGun : MonoBehaviour
 	{
 		// Setting up the references.
 		//anim = transform.root.gameObject.GetComponent<Animator>();
-		enemyCtrl = transform.root.GetComponent<Enemy>();
+		enemyCtrl = transform.parent.GetComponent<Enemy>();
 		playerCtrl = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
-	}
+	}																
 
 	void FixedUpdate () 
 	{

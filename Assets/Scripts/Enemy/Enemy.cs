@@ -63,7 +63,9 @@ public class Enemy : MonoBehaviour, IEnemy
 
 	void OnTriggerEnter2D (Collider2D col) 
 	{
-		if (col.tag == "ground" && !dead)
+		Debug.Log(col.tag);
+		
+		if (col.tag == "Ground" && !dead)
 			Jump();
 	}
 

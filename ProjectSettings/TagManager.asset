@@ -21,6 +21,7 @@ TagManager:
   - GroundCheck
   - Enemy
   - EnemyBullet
+  - Gun
   layers:
   - Default
   - TransparentFX

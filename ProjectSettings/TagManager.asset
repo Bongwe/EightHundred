@@ -95,3 +95,9 @@ TagManager:
   - name: EnemySquare
     uniqueID: 2064152757
     locked: 0
+  - name: Basket
+    uniqueID: 3407066099
+    locked: 0
+  - name: Tree
+    uniqueID: 3147909461
+    locked: 0

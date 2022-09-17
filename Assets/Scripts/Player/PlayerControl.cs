@@ -26,10 +26,12 @@ public class PlayerControl : MonoBehaviour
 	private Animator anim;					// Reference to the player's animator component.
 	public Transform playerDirection;
 
-	public Joystick joystick;
+	//public Joystick joystick;
 	public Button jumpButton;
 
 	public float h;
+	public float horizontalInput = 0;
+	public PlayerMovement playerMovement;
 
 	void Awake()
 	{
@@ -64,13 +66,26 @@ public class PlayerControl : MonoBehaviour
 	{
 		// Cache the horizontal input.
 		//h = Input.GetAxis("Horizontal");
-		h = Input.GetAxis("Horizontal");
+		//h = Input.GetAxis("Horizontal");
 
-		if (joystick.Horizontal >= .2f)
+		/*if (joystick.Horizontal >= .2f)
 		{
 			h = 2.5f;
 		}
 		else if (joystick.Horizontal <= -.2f)
+		{
+			h = -2.5f;
+		}
+		else
+		{
+			h = 0;
+		}*/
+
+		if (playerMovement.isMovingRight)
+		{
+			h = 2.5f;
+		}
+		else if (playerMovement.isMovingLeft)
 		{
 			h = -2.5f;
 		}
@@ -134,7 +149,6 @@ public class PlayerControl : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-
 
 	public IEnumerator Taunt()
 	{

@@ -51,6 +51,10 @@ public class EnemyBomber : MonoBehaviour, IEnemy
 	private bool rBodyEnabled = true;
 	private float currentTime;
 
+	private Transform target;
+	private int currentTargetIndex = 0;
+	public float MinDistance = 1f;
+
 	//particle systems
 	private ParticleSystem deathRing;
 
@@ -68,12 +72,12 @@ public class EnemyBomber : MonoBehaviour, IEnemy
 	{
 		// Setting up the references.
 		ren = GetComponent<SpriteRenderer>();
-		groundCheck = transform.Find("groundCheck");
+		groundCheck = transform.Find("GroundCheck");
 		playerCtrl = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
 		randomDistance =  Random.Range (3,10);
 		targetPosition.x = spawnPosition.x - randomDistance;
-		explosionFX = GameObject.FindGameObjectWithTag("ExplosionFX").GetComponent<ParticleSystem>();
-		deathRing = GameObject.FindGameObjectWithTag("enemyDeathRing").GetComponent<ParticleSystem>();
+		//explosionFX = GameObject.FindGameObjectWithTag("ExplosionFX").GetComponent<ParticleSystem>();
+		//deathRing = GameObject.FindGameObjectWithTag("enemyDeathRing").GetComponent<ParticleSystem>();
 		anim = GetComponent<Animator>();
 		rigidbody2D = transform.GetComponent<Rigidbody2D>();
 	}
@@ -99,7 +103,7 @@ public class EnemyBomber : MonoBehaviour, IEnemy
 
 	void OnTriggerEnter2D (Collider2D col) 
 	{
-		if (col.tag == "ground") {
+		if (col.tag == "Ground") {
 			Jump ();
 		}
 		else if(col.tag == "Player" && !dead)
@@ -133,7 +137,38 @@ public class EnemyBomber : MonoBehaviour, IEnemy
 		}
 		
 		if(!dead)
-			enemyAI.PublicFixedUpdate ();
+        {
+			if (patrolPoints != null && transform != null)
+			{
+
+				if (patrolPoints.Length > 0 && target == null)
+				{
+					target = patrolPoints[currentTargetIndex].GetComponent<Transform>();
+				}
+
+				if (patrolPoints.Length > 0)
+				{
+
+					float step = moveSpeed * Time.deltaTime;
+					transform.position = Vector2.MoveTowards(transform.position, target.position, step);
+
+					if (Vector2.Distance(transform.position, target.position) < MinDistance)
+					{ // 0.1f) {
+					  //Debug.Log("End reached....");
+					}
+				}
+			}
+
+			if (transform != null && target != null && Vector2.Distance(transform.position, target.position) < MinDistance)
+			{
+				//if () {
+				//The end target has been reached
+				currentTargetIndex = (currentTargetIndex + 1) % patrolPoints.Length;
+				//Debug.Log ("CurrentTargetIndex: " + currentTargetIndex);
+				target = patrolPoints[currentTargetIndex].GetComponent<Transform>();
+				//Debug.Log("End reached....");
+			}
+		}
 
 		// Wait for 2 seconds
 		float waitTime = 1.3f;
@@ -151,8 +186,8 @@ public class EnemyBomber : MonoBehaviour, IEnemy
 	public void Explode()
 	{
 		// Set the explosion effect's position to the bomb's position and play the particle system.
-		explosionFX.transform.position = transform.position;
-		explosionFX.Play();
+		//explosionFX.transform.position = transform.position;
+		//explosionFX.Play();
 		
 		// Instantiate the explosion prefab.
 		Instantiate(explosion,transform.position, Quaternion.identity);

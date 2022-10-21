@@ -19,7 +19,7 @@ public class EnemyRocket : MonoBehaviour
 		Quaternion randomRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
 		
 		// Instantiate the explosion where the rocket is with the random rotation.
-		Instantiate(explosion, transform.position, randomRotation);
+		//Instantiate(explosion, transform.position, randomRotation);
 	}
 	
 	void OnTriggerEnter2D (Collider2D col) 
@@ -54,8 +54,7 @@ public class EnemyRocket : MonoBehaviour
 			// Destroy the rocket.
 			Destroy (gameObject);
 		}*/
-
-		if(col.tag == "Player")
+		if (col.tag == "Player")
 		{
 			// ... find the Enemy script and call the Hurt function.
 			col.gameObject.GetComponent<PlayerControl>().playerHealth.TakeDamage(damage);
@@ -74,10 +73,11 @@ public class EnemyRocket : MonoBehaviour
 			Destroy (gameObject);
 		}
 		// Otherwise if it hits a ground...
-		else if(col.tag == "ground")
+		else if(col.tag == "Ground")
 		{	
 			// Call the explosion instantiation.
 			OnExplode();
+			
 			
 			// Destroy the rocket.
 			Destroy (gameObject);

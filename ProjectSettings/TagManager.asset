@@ -22,6 +22,7 @@ TagManager:
   - Enemy
   - EnemyBullet
   - Gun
+  - PistolExplosiveBullet
   layers:
   - Default
   - TransparentFX
@@ -34,7 +35,7 @@ TagManager:
   - EnemyGun
   - Player
   - EnemyBullet
-  - 
+  - ForegroundComponetnts
   - 
   - 
   - 
@@ -103,4 +104,10 @@ TagManager:
     locked: 0
   - name: Bomb
     uniqueID: 1511818717
+    locked: 0
+  - name: ForegroundElements
+    uniqueID: 3915377155
+    locked: 0
+  - name: New Layer
+    uniqueID: 704821493
     locked: 0

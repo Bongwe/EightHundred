@@ -1,0 +1,672 @@
+fileFormatVersion: 2
+guid: 340df67f69f38c94886d642059a3ede2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2318898870371489981
+    second: RECOVER_LootWranglerGraphics_0
+  - first:
+      213: 8753543541853979037
+    second: RECOVER_LootWranglerGraphics_1
+  - first:
+      213: -6681699253412421296
+    second: RECOVER_LootWranglerGraphics_2
+  - first:
+      213: -729396674951359528
+    second: RECOVER_LootWranglerGraphics_3
+  - first:
+      213: -8541876155843758650
+    second: RECOVER_LootWranglerGraphics_4
+  - first:
+      213: 6750351943006029310
+    second: RECOVER_LootWranglerGraphics_5
+  - first:
+      213: -2612017132726675657
+    second: RECOVER_LootWranglerGraphics_6
+  - first:
+      213: -687208346161303275
+    second: RECOVER_LootWranglerGraphics_7
+  - first:
+      213: -1217943853374773263
+    second: RECOVER_LootWranglerGraphics_8
+  - first:
+      213: -3794552570686489204
+    second: RECOVER_LootWranglerGraphics_9
+  - first:
+      213: 7669090605702538882
+    second: RECOVER_LootWranglerGraphics_10
+  - first:
+      213: -6218098002782418654
+    second: RECOVER_LootWranglerGraphics_11
+  - first:
+      213: 4455067872970669673
+    second: RECOVER_LootWranglerGraphics_12
+  - first:
+      213: -1791929469253983775
+    second: RECOVER_LootWranglerGraphics_13
+  - first:
+      213: -3518662785249240948
+    second: RECOVER_LootWranglerGraphics_14
+  - first:
+      213: -4289269572504467156
+    second: RECOVER_LootWranglerGraphics_15
+  - first:
+      213: -4133780601908445821
+    second: RECOVER_LootWranglerGraphics_16
+  - first:
+      213: 5013555318518969020
+    second: RECOVER_LootWranglerGraphics_17
+  - first:
+      213: -9072539627752965952
+    second: RECOVER_LootWranglerGraphics_18
+  - first:
+      213: -4048070221441347398
+    second: RECOVER_LootWranglerGraphics_19
+  - first:
+      213: 5337745600253084367
+    second: RECOVER_LootWranglerGraphics_20
+  - first:
+      213: -869059484429957972
+    second: RECOVER_LootWranglerGraphics_21
+  - first:
+      213: 4847254402491736596
+    second: RECOVER_LootWranglerGraphics_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 498
+        width: 211
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db81c8e8c326e2020800000000000000
+      internalID: 2318898870371489981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 494
+        width: 223
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d910f1a1975da7970800000000000000
+      internalID: 8753543541853979037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 222
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0512c502ee5d543a0800000000000000
+      internalID: -6681699253412421296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_3
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 456
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d35c21b699a0e5f0800000000000000
+      internalID: -729396674951359528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 418
+        width: 222
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5bd8f94e8257980800000000000000
+      internalID: -8541876155843758650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 418
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef50eb7c3511ead50800000000000000
+      internalID: 6750351943006029310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 222
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7379790c14040cbd0800000000000000
+      internalID: -2612017132726675657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 380
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5113f5076ab8676f0800000000000000
+      internalID: -687208346161303275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 222
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7e93fa48ef81fe0800000000000000
+      internalID: -1217943853374773263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 342
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dbfa69a8a075bc0800000000000000
+      internalID: -3794552570686489204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 222
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2866f27f5451e6a60800000000000000
+      internalID: 7669090605702538882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_11
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 304
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2298695bfc0e4b9a0800000000000000
+      internalID: -6218098002782418654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 266
+        width: 224
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96efba260a493dd30800000000000000
+      internalID: 4455067872970669673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_13
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 266
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1ef8a44a9c127e0800000000000000
+      internalID: -1791929469253983775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 222
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8815d8e6d23b2fc0800000000000000
+      internalID: -3518662785249240948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_15
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 228
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29caf0ac047974c0800000000000000
+      internalID: -4289269572504467156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 222
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38db8dbb17cd1a6c0800000000000000
+      internalID: -4133780601908445821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 190
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2f71ecff9b39540800000000000000
+      internalID: 5013555318518969020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 222
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c83125e64dd71280800000000000000
+      internalID: -9072539627752965952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_19
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 152
+        width: 223
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0d629c49d52d7c0800000000000000
+      internalID: -4048070221441347398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 222
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc24d74c75b731a40800000000000000
+      internalID: 5337745600253084367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_21
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 114
+        width: 223
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca44eddd00b70f3f0800000000000000
+      internalID: -869059484429957972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_LootWranglerGraphics_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 222
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412e77c7238e44340800000000000000
+      internalID: 4847254402491736596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

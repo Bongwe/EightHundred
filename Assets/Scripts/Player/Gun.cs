@@ -31,7 +31,7 @@ public class Gun : MonoBehaviour
 	void Update ()
 	{
 		// If the fire button is pressed...
-		if( isShooting && hasGun && ammunition > 0)
+			if( isShooting && hasGun && ammunition > 0)
 		{
 			// ... set the animator Shoot trigger parameter and play the audioclip.
 			//anim.SetTrigger("Shoot");

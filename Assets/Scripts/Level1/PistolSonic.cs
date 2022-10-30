@@ -17,7 +17,7 @@ public class PistolSonic : MonoBehaviour
 		//explosionFX = GameObject.FindGameObjectWithTag("ExplosionFX").GetComponent<ParticleSystem>();
 
 		// Destroy the rocket after 8 seconds if it doesn't get destroyed before then.
-		Destroy(gameObject, 2);
+		Destroy(gameObject, 2.0f);
 	}
 
 	void OnExplode()

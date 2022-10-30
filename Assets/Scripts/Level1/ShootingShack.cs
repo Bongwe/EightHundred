@@ -12,7 +12,6 @@ public class ShootingShack : MonoBehaviour
 	private ParticleSystem explosionFX;     // Reference to the particle system of the explosion effect.
 	public int damage = 4;
 	public float bulletSpeed = 20;
-	private bool isShooting = true;
 	public float ammunition = 10;
 	public AudioClip[] gunSound;              
 
@@ -20,6 +19,8 @@ public class ShootingShack : MonoBehaviour
 	{
 		// Setting up references.
 		//explosionFX = GameObject.FindGameObjectWithTag("ExplosionFX").GetComponent<ParticleSystem>();
+
+		InvokeRepeating("Shoot", 2.0f, 0.6f);
 
 	}
 
@@ -57,34 +58,28 @@ public class ShootingShack : MonoBehaviour
 
     public void Update()
     {
-        // If the fire button is pressed...
-        if (isShooting && ammunition > 0)
-        {
-            // ... set the animator Shoot trigger parameter and play the audioclip.
-            //anim.SetTrigger("Shoot");
-            //GetComponent<AudioSource>().Play();
-            AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
-            ammunition--;
-
-            Vector2 bulletSpawnPosition = transform.position;
-
-            if (isShooting)
-            {
-                Vector3 shackPosition = transform.position;
-				//shackPosition.x = shackPosition.x - 100f;
-			   // Otherwise instantiate the rocket facing left and set it's velocity to the left.
-				Rigidbody2D bulletInstance = Instantiate(weapon, shackPosition, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
-                bulletInstance.velocity = new Vector2( -1 * bulletSpeed, 0);
-            }
-
-        }
-
-
-        //isShooting = false;
+        
 	}
 
-	public void shoot()
+	public void Shoot()
 	{
-		isShooting = true;
+		// ... set the animator Shoot trigger parameter and play the audioclip.
+		//anim.SetTrigger("Shoot");
+		//GetComponent<AudioSource>().Play();
+		AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
+		ammunition--;
+
+		float randomX = Random.Range(0.0f, 10.0f);
+		float randomy = Random.Range(-1.0f, 5.0f);
+		bulletSpeed = Random.Range(10.0f, 20.0f);
+
+		Vector3 shackPosition = transform.position;
+		shackPosition.x = shackPosition.x - randomX;
+		shackPosition.y = shackPosition.y + randomy;
+		// Otherwise instantiate the rocket facing left and set it's velocity to the left.
+		Rigidbody2D bulletInstance = Instantiate(weapon, shackPosition, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
+		bulletInstance.velocity = new Vector2(-1 * bulletSpeed, 0);
+
+		Vector2 bulletSpawnPosition = transform.position;
 	}
 }

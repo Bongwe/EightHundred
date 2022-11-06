@@ -458,11 +458,11 @@ RectTransform:
   m_Children:
   - {fileID: 610406208}
   m_Father: {fileID: 2077919810}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -983}
+  m_AnchoredPosition: {x: 100, y: -1051}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745323840
@@ -589,12 +589,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2077919810}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -36, y: 124}
-  m_SizeDelta: {x: 2000, y: 610.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 129, y: 57}
+  m_SizeDelta: {x: -1811.1997, y: -844.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747753507
 MonoBehaviour:
@@ -629,8 +629,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Developer and designer \t- Mzwandile Mahlangu\nMusic\t\t \t\t\t\t\t\t-
-    Keaobaka Makete"
+  m_Text: "Keaobaka Makete \t- Music\nMzwandile Mahlangu  \t- Developer and designer\n"
 --- !u!222 &747753508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -716,8 +715,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.3977051, y: 36}
-  m_SizeDelta: {x: 2231.4, y: 895.9}
+  m_AnchoredPosition: {x: 105, y: -32}
+  m_SizeDelta: {x: 1401.2, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1174788982
 MonoBehaviour:
@@ -786,11 +785,11 @@ RectTransform:
   m_Father: {fileID: 2077919810}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22, y: 557}
-  m_SizeDelta: {x: 796.8, y: 148.1}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -22, y: -88.95001}
+  m_SizeDelta: {x: 796.8, y: 148.09998}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1563877731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,7 +812,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: fa62e3be41e6b2b47aa03d97e82922ff, type: 3}
-    m_FontSize: 150
+    m_FontSize: 100
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -927,8 +926,8 @@ RectTransform:
   - {fileID: 261250457}
   - {fileID: 1174788981}
   - {fileID: 1563877730}
-  - {fileID: 745323839}
   - {fileID: 747753506}
+  - {fileID: 745323839}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

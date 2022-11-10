@@ -36,7 +36,7 @@ TagManager:
   - Player
   - EnemyBullet
   - ForegroundComponetnts
-  - 
+  - Fence
   - 
   - 
   - 
@@ -108,6 +108,6 @@ TagManager:
   - name: ForegroundElements
     uniqueID: 3915377155
     locked: 0
-  - name: New Layer
+  - name: Fence
     uniqueID: 704821493
     locked: 0

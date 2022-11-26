@@ -134,3 +134,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582e223711c336d4181056123da106d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shackBulletDamage: 2

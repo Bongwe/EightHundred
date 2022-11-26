@@ -23,6 +23,7 @@ TagManager:
   - EnemyBullet
   - Gun
   - PistolExplosiveBullet
+  - ShootingShack
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - EnemyBullet
   - ForegroundComponetnts
   - Fence
-  - 
+  - Background
   - 
   - 
   - 
@@ -57,11 +58,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 679645055
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Level
     uniqueID: 1134957883

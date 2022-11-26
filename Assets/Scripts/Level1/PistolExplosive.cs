@@ -69,6 +69,20 @@ public class PistolExplosive : MonoBehaviour
 				Destroy (gameObject);
 			}
 		}
+		else if (col.tag == "ShootingShack")
+		{
+			// ... find the Enemy script and call the Hurt function.
+			col.gameObject.GetComponent<ShootingShack>().pistolDamage(damage);
+
+			// Call the explosion instantiation.
+			//Do not destroy the bullet if the shack has not been destroyed
+			if (!col.gameObject.GetComponent<ShootingShack>().shackIsDestroyed)
+			{
+				OnExplode();
+				// Destroy the bullets	.
+				Destroy(gameObject);
+			}
+		}
 		else if(col.tag == "door")
 		{	
 			// ... find the Enemy script and call the Hurt function.

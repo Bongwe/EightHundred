@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShackBullet : MonoBehaviour
 {
+    public int shackBulletDamage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,24 @@ public class ShackBullet : MonoBehaviour
             OnExplode();
 
             // Destroy the rocket.
+            Destroy(gameObject);
+        }
+        if (col.tag == "Player")
+        {
+            // ... find the Enemy script and call the Hurt function.
+            col.gameObject.GetComponent<PlayerControl>().playerHealth.TakeDamage(shackBulletDamage);
+
+            float yPlaneDistance = 250;
+            float xPlaneDistance = 250;
+            bool facingRight = col.gameObject.GetComponent<PlayerControl>().facingRight;
+
+            if (facingRight != null && !facingRight)
+                col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(xPlaneDistance, yPlaneDistance));
+            else
+                col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(xPlaneDistance, yPlaneDistance));
+
+            // Instantiate the explosion and destroy the rocket.
+            //OnExplode();
             Destroy(gameObject);
         }
     }

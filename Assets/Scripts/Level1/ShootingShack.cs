@@ -13,7 +13,35 @@ public class ShootingShack : MonoBehaviour
 	public int damage = 4;
 	public float bulletSpeed = 20;
 	public float ammunition = 10;
-	public AudioClip[] gunSound;              
+	public AudioClip[] gunSound;
+	public bool shackIsDestroyed = false;
+	public int HP = 20;
+
+
+	private Animator anim;
+	double damageOneHP = 16;
+	double damageTwoHP = 10;
+	double damageThreeHP = 6;
+	double damageFourHP = 0;
+	bool damageOne = false;
+	bool damageTwo = false;
+	bool damageThree = false;
+	bool damageFour = false;
+
+	private ParticleSystem explosionOneFX;
+	private ParticleSystem explosionDustFX;
+	private ParticleSystem explosionFireFX;
+
+	void Awake()
+	{
+		// Setting up references.
+		//explosionFX = GameObject.FindGameObjectWithTag("ExplosionFX").GetComponent<ParticleSystem>();
+		//explosionOneFX = GameObject.FindGameObjectWithTag("ShackExplosionOneFX").GetComponent<ParticleSystem>();
+		//explosionDustFX = GameObject.FindGameObjectWithTag("ShackExplosionDust").GetComponent<ParticleSystem>();
+		//explosionFireFX = GameObject.FindGameObjectWithTag("ShackFireExplosion").GetComponent<ParticleSystem>();
+		anim = GetComponent<Animator>();
+	}
+
 
 	void Start()
 	{
@@ -33,17 +61,52 @@ public class ShootingShack : MonoBehaviour
 		//Instantiate(explosion, transform.position, randomRotation);
 	}
 
+	public void bombDamage(int damage)
+	{
+		HP = HP - damage;
+		showDamageOnShack();
+		if (HP <= 0 && !shackIsDestroyed)
+		{
+			Explode();
+			shackIsDestroyed = true;
+		}
+	}
+
+	public void pistolDamage(int damage)
+	{
+		HP = HP - damage;
+		showDamageOnShack();
+
+		if (!shackIsDestroyed)
+			playParticleSystem(explosionOneFX);
+
+		if (HP <= 0 && !shackIsDestroyed)
+		{
+			Explode();
+			playParticleSystem(explosionFireFX);
+			playParticleSystem(explosionDustFX);
+			shackIsDestroyed = true;
+		}
+	}
+
+	public void playParticleSystem(ParticleSystem particleSystem)
+	{
+		//particleSystem.transform.position = transform.position;
+		//particleSystem.Play();
+	}
+
 	void OnTriggerEnter2D(Collider2D col)
 	{
         // Otherwise if it hits a Shack...
         if (col.tag == "Bullet")
         {
-            // ... find the Enemy script and call the Hurt function.
-            //col.gameObject.GetComponent<Shack>().pistolDamage(damage);
+			// ... find the Enemy script and call the Hurt function.
+			//col.gameObject.GetComponent<Shack>().pistolDamage(damage);
 
-            // Call the explosion instantiation.
-            //Do not destroy the bullet if the shack has not been destroyed
-            if (!col.gameObject.GetComponent<Shack>().shackIsDestroyed)
+			// Call the explosion instantiation.
+			//Do not destroy the bullet if the shack has not been destroyed
+			anim.Play("ShootingShackShot");
+			if (!this.shackIsDestroyed)
             {
                 OnExplode();
             }
@@ -53,6 +116,7 @@ public class ShootingShack : MonoBehaviour
 
 	public void Explode()
 	{
+		shackIsDestroyed = true;
 		//Destroy(gameObject);
 	}
 
@@ -81,5 +145,54 @@ public class ShootingShack : MonoBehaviour
 		bulletInstance.velocity = new Vector2(-1 * bulletSpeed, 0);
 
 		Vector2 bulletSpawnPosition = transform.position;
+	}
+
+	public void showDamageOnShack()
+	{
+
+		if (HP >= damageTwoHP && HP <= damageOneHP)
+		{
+			anim.SetBool("damageOne", true);
+			anim.SetBool("damageTwo", false);
+			anim.SetBool("damageThree", false);
+			anim.SetBool("damageFour", false);
+			damageOne = true;
+
+		}
+		else if (HP >= damageThreeHP && HP <= damageTwoHP)
+		{
+			anim.SetBool("damageOne", false);
+			anim.SetBool("damageTwo", true);
+			anim.SetBool("damageThree", false);
+			anim.SetBool("damageFour", false);
+			//damage2Smoke.enableEmission = true;
+			damageOne = false;
+			damageTwo = true;
+
+		}
+		else if (HP >= damageFourHP && HP <= damageThreeHP)
+		{
+			anim.SetBool("damageOne", false);
+			anim.SetBool("damageTwo", false);
+			anim.SetBool("damageThree", true);
+			anim.SetBool("damageFour", false);
+			//damage3Smoke.enableEmission = true;
+			damageOne = false;
+			damageTwo = false;
+			damageThree = true;
+
+		}
+		else if (HP <= damageFourHP)
+		{
+			anim.SetBool("damageOne", false);
+			anim.SetBool("damageTwo", false);
+			anim.SetBool("damageThree", false);
+			anim.SetBool("damageFour", true);
+			damageThree = false;
+			damageFour = true;
+			//damage2Smoke.enableEmission = false;
+			//damage3Smoke.enableEmission = false;
+
+		}
 	}
 }

@@ -117,6 +117,12 @@ public class ShootingShack : MonoBehaviour
 	public void Explode()
 	{
 		shackIsDestroyed = true;
+
+		Collider2D[] cols = GetComponents<Collider2D>();
+		foreach (Collider2D c in cols)
+		{
+			c.isTrigger = true;
+		}
 		//Destroy(gameObject);
 	}
 
@@ -127,25 +133,25 @@ public class ShootingShack : MonoBehaviour
 
 	public void Shoot()
 	{
-		// ... set the animator Shoot trigger parameter and play the audioclip.
-		//anim.SetTrigger("Shoot");
-		//GetComponent<AudioSource>().Play();
-		AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
-		ammunition--;
+        // ... set the animator Shoot trigger parameter and play the audioclip.
+        //anim.SetTrigger("Shoot");
+        //GetComponent<AudioSource>().Play();
+        AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
+        ammunition--;
 
-		float randomX = Random.Range(0.0f, 10.0f);
-		float randomy = Random.Range(-1.0f, 5.0f);
-		bulletSpeed = Random.Range(10.0f, 20.0f);
+        float randomX = Random.Range(0.0f, 10.0f);
+        float randomy = Random.Range(-1.0f, 5.0f);
+        bulletSpeed = Random.Range(10f, 20.0f);
 
-		Vector3 shackPosition = transform.position;
-		shackPosition.x = shackPosition.x - randomX;
-		shackPosition.y = shackPosition.y + randomy;
-		// Otherwise instantiate the rocket facing left and set it's velocity to the left.
-		Rigidbody2D bulletInstance = Instantiate(weapon, shackPosition, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
-		bulletInstance.velocity = new Vector2(-1 * bulletSpeed, 0);
+        Vector3 shackPosition = transform.position;
+        shackPosition.x = shackPosition.x - randomX;
+        shackPosition.y = shackPosition.y + randomy;
+        // Otherwise instantiate the rocket facing left and set it's velocity to the left.
+        Rigidbody2D bulletInstance = Instantiate(weapon, shackPosition, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
+        bulletInstance.velocity = new Vector2(-1 * bulletSpeed, 0);
 
-		Vector2 bulletSpawnPosition = transform.position;
-	}
+        Vector2 bulletSpawnPosition = transform.position;
+    }
 
 	public void showDamageOnShack()
 	{

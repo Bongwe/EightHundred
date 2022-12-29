@@ -128,7 +128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4034685808001921740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.33, z: 0}
+  m_LocalPosition: {x: 0, y: -2.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4034685808763798532}
@@ -149,6 +149,8 @@ GameObject:
   - component: {fileID: 4034685808763798534}
   - component: {fileID: 4034685808763798535}
   - component: {fileID: 4034685808763798531}
+  - component: {fileID: 5724760965262758450}
+  - component: {fileID: 8264520429963570921}
   m_Layer: 14
   m_Name: EnemySquare
   m_TagString: Enemy
@@ -326,7 +328,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2e20b5071623f44cf9c72acf016de4b6, type: 3}
   dead: 0
   facingRight: 0
-  jumpForce: 0
+  jumpForce: 500
   playerRadius: 10
   grounded: 0
   time: 0
@@ -337,3 +339,35 @@ MonoBehaviour:
   enemyVelocty: 0
   gun: {fileID: 4034685807768612766}
   jumping: 0
+--- !u!58 &5724760965262758450
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4034685808763798538}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.89, y: -0.58}
+  serializedVersion: 2
+  m_Radius: 0.14
+--- !u!58 &8264520429963570921
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4034685808763798538}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.92, y: -0.74}
+  serializedVersion: 2
+  m_Radius: 0.14

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    public Vector2 playerPosition;
+    public MainManager mainManager;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class CheckPoint : MonoBehaviour
         
         if (collision.tag == "Player" && playerControl != null)
         {
-            playerPosition = playerControl.GetComponent<Rigidbody2D>().position;
+            mainManager.playerPosition = playerControl.GetComponent<Rigidbody2D>().position;
         }
     }
 }

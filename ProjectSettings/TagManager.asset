@@ -24,6 +24,7 @@ TagManager:
   - Gun
   - PistolExplosiveBullet
   - ShootingShack
+  - MainManager
   layers:
   - Default
   - TransparentFX

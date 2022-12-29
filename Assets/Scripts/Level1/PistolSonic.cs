@@ -31,6 +31,9 @@ public class PistolSonic : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
+		Enemy enemy = col.gameObject.GetComponent<Enemy>();
+		EnemyCircle enemyCircle = col.gameObject.GetComponent<EnemyCircle>();
+
 		// If it hits an enemy...
 		if (col.tag == "Ground")
 		{
@@ -40,7 +43,7 @@ public class PistolSonic : MonoBehaviour
 			// Call the explosion instantiation.
 			OnExplode();
 		}
-        if (col.tag == "Enemy")
+        else if (col.tag == "Enemy")
 		{
 			BounceBullet();
 			/// ... find the Enemy script and call the Hurt function.
@@ -50,7 +53,7 @@ public class PistolSonic : MonoBehaviour
             OnExplode();
 
         }
-        if (col.tag == "EnemyBomber")
+        else if (col.tag == "EnemyBomber")
 		{
 			BounceBullet();
 
@@ -60,6 +63,17 @@ public class PistolSonic : MonoBehaviour
 			// Call the explosion instantiation.
 			OnExplode();
 
+		}
+		else if (col.tag == "Enemy" && enemyCircle != null && !enemyCircle.dead)
+		{
+			// ... find the Enemy script and call the Hurt function.
+			col.gameObject.GetComponent<EnemyCircle>().TakeDamage(damage);
+
+			// Call the explosion instantiation.
+			OnExplode();
+
+			// Destroy the rocket.
+			Destroy(gameObject);
 		}
 		// Otherwise if it hits a Shack...
 		else if (col.tag == "Shack")

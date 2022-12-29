@@ -141,7 +141,7 @@ public class ShootingShack : MonoBehaviour
 
         float randomX = Random.Range(0.0f, 10.0f);
         float randomy = Random.Range(-1.0f, 5.0f);
-        bulletSpeed = Random.Range(10f, 20.0f);
+        bulletSpeed = Random.Range(8.0f, 15.0f);
 
         Vector3 shackPosition = transform.position;
         shackPosition.x = shackPosition.x - randomX;

@@ -97,8 +97,8 @@ public class EnemyCircle : MonoBehaviour, IEnemy
 
 	void playParticleSystem(ParticleSystem particleSystem)
 	{
-		particleSystem.transform.position = transform.position;
-		particleSystem.Play();
+		//particleSystem.transform.position = transform.position;
+		//particleSystem.Play();
 	}
 
 	void OnTriggerEnter2D(Collider2D col)
@@ -135,7 +135,7 @@ public class EnemyCircle : MonoBehaviour, IEnemy
 
 		if (HP <= 0 && !dead)
 		{
-			playParticleSystem(deathRing);
+			//playParticleSystem(deathRing);
 			anim.SetBool("walking", false);
 			anim.SetBool("dead", true);
 			currentTime = time;
@@ -176,7 +176,7 @@ public class EnemyCircle : MonoBehaviour, IEnemy
 			}
 		}
 
-		if(!shooting)
+		if(!shooting && !dead)
 				Shoot();
 		if (shooting == true && Time.realtimeSinceStartup > (lastShotTime + delayBeforeShooting))
 		{
@@ -220,7 +220,7 @@ public class EnemyCircle : MonoBehaviour, IEnemy
 
 		// Play a random audioclip from the deathClips array.
 		int i = Random.Range(0, deathClips.Length);
-		AudioSource.PlayClipAtPoint(deathClips[i], transform.position);
+		//AudioSource.PlayClipAtPoint(deathClips[i], transform.position);
 
 		float currentTime = Time.deltaTime;
 

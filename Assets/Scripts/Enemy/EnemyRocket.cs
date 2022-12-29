@@ -59,8 +59,8 @@ public class EnemyRocket : MonoBehaviour
 			// ... find the Enemy script and call the Hurt function.
 			col.gameObject.GetComponent<PlayerControl>().playerHealth.TakeDamage(damage);
 
-			float yPlaneDistance = 250;
-			float xPlaneDistance = 250;
+			float yPlaneDistance = 100;
+			float xPlaneDistance = 100;
 			bool facingRight = col.gameObject.GetComponent<PlayerControl>().facingRight;
 
 			if (facingRight != null && !facingRight)

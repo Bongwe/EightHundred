@@ -31,8 +31,11 @@ public class PistolExplosive : MonoBehaviour
 	
 	void OnTriggerEnter2D (Collider2D col) 
 	{
+		Enemy enemy = col.gameObject.GetComponent<Enemy>();
+		EnemyCircle enemyCircle = col.gameObject.GetComponent<EnemyCircle>();
+
 		// If it hits an enemy...
-		if(col.tag == "Enemy")
+		if (col.tag == "Enemy")
 		{
 			/// ... find the Enemy script and call the Hurt function.
 			col.gameObject.GetComponent<Enemy>().TakeDamage(damage);
@@ -53,6 +56,17 @@ public class PistolExplosive : MonoBehaviour
 			
 			// Destroy the rocket.
 			Destroy (gameObject);
+		}
+		else if (col.tag == "Enemy" && enemyCircle != null && !enemyCircle.dead)
+		{
+			// ... find the Enemy script and call the Hurt function.
+			col.gameObject.GetComponent<EnemyCircle>().TakeDamage(damage);
+
+			// Call the explosion instantiation.
+			OnExplode();
+
+			// Destroy the rocket.
+			Destroy(gameObject);
 		}
 		// Otherwise if it hits a Shack...
 		else if(col.tag == "Shack")

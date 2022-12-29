@@ -24,7 +24,8 @@ public class PistolBullet : MonoBehaviour
 	
 	void OnTriggerEnter2D (Collider2D col) 
 	{
-	        Enemy enemy = col.gameObject.GetComponent<Enemy>();
+	    Enemy enemy = col.gameObject.GetComponent<Enemy>();
+		EnemyCircle enemyCircle = col.gameObject.GetComponent<EnemyCircle>();
 		// If it hits an enemy...
 		if (col.tag == "Enemy" && enemy != null && !enemy.dead)
 		{
@@ -37,7 +38,7 @@ public class PistolBullet : MonoBehaviour
 			// Destroy the rocket.
 			Destroy (gameObject);
 		}
-		if(col.tag == "EnemyBomber" && enemy != null && !enemy.dead)
+		else if(col.tag == "EnemyBomber" && enemy != null && !enemy.dead)
 		{
 			// ... find the Enemy script and call the Hurt function.
 			col.gameObject.GetComponent<EnemyBomber>().TakeDamage(damage);
@@ -47,6 +48,17 @@ public class PistolBullet : MonoBehaviour
 			
 			// Destroy the rocket.
 			Destroy (gameObject);
+		}
+		else if (col.tag == "Enemy" && enemyCircle != null && !enemyCircle.dead)
+		{
+			// ... find the Enemy script and call the Hurt function.
+			col.gameObject.GetComponent<EnemyCircle>().TakeDamage(damage);
+
+			// Call the explosion instantiation.
+			OnExplode();
+
+			// Destroy the rocket.
+			Destroy(gameObject);
 		}
 		// Otherwise if it hits a Shack...
 		else if(col.tag == "Shack")

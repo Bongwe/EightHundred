@@ -146,12 +146,16 @@ public class ShootingShack : MonoBehaviour
         Vector3 shackPosition = transform.position;
         shackPosition.x = shackPosition.x - randomX;
         shackPosition.y = shackPosition.y + randomy;
-        // Otherwise instantiate the rocket facing left and set it's velocity to the left.
-        Rigidbody2D bulletInstance = Instantiate(weapon, shackPosition, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
-        bulletInstance.velocity = new Vector2(-1 * bulletSpeed, 0);
+		if(!this.shackIsDestroyed)
+        {
+			// Otherwise instantiate the rocket facing left and set it's velocity to the left.
+			Rigidbody2D bulletInstance = Instantiate(weapon, shackPosition, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
+			bulletInstance.velocity = new Vector2(-1 * bulletSpeed, 0);
+			Vector2 bulletSpawnPosition = transform.position;
 
-        Vector2 bulletSpawnPosition = transform.position;
-    }
+		}
+
+	}
 
 	public void showDamageOnShack()
 	{

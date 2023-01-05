@@ -32,7 +32,7 @@ public class PlayerControl : MonoBehaviour
 	public float h;
 	public float horizontalInput = 0;
 	public PlayerMovement playerMovement;
-	public MainManager instance;
+	public MainManager mainManager;
 
 	void Awake()
 	{
@@ -40,8 +40,9 @@ public class PlayerControl : MonoBehaviour
 		groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator>();
 
-		instance = GameObject.FindGameObjectWithTag("MainManager").GetComponent<MainManager>();
-		GetComponent<Rigidbody2D>().position = instance.playerPosition;
+		mainManager = GameObject.FindGameObjectWithTag("MainManager").GetComponent<MainManager>();
+		Debug.Log(mainManager.playerPosition);
+		GetComponent<Rigidbody2D>().position = mainManager.playerPosition;
 	}
 
 	void Start()

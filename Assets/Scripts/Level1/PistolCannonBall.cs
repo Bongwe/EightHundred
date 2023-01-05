@@ -23,7 +23,7 @@ public class PistolCannonBall : MonoBehaviour
 		EnemyCircle enemyCircle = col.gameObject.GetComponent<EnemyCircle>();
 
 		// If it hits an enemy...
-		if (col.tag == "Enemy")
+		if (col.tag == "Enemy" && enemy != null && !enemy.dead)
 		{
 			/// ... find the Enemy script and call the Hurt function.
 			col.gameObject.GetComponent<Enemy>().TakeDamage(damage);
@@ -34,7 +34,7 @@ public class PistolCannonBall : MonoBehaviour
 			// Destroy the rocket.
 			Destroy(gameObject);
 		}
-		if (col.tag == "EnemyBomber")
+		if (col.tag == "EnemyBomber" && enemy != null && !enemy.dead)
 		{
 			// ... find the Enemy script and call the Hurt function.
 			col.gameObject.GetComponent<EnemyBomber>().TakeDamage(damage);

@@ -35,7 +35,7 @@ public class PistolSonic : MonoBehaviour
 		EnemyCircle enemyCircle = col.gameObject.GetComponent<EnemyCircle>();
 
 		// If it hits an enemy...
-		if (col.tag == "Ground")
+		if (col.tag == "Ground" && enemy != null && !enemy.dead)
 		{
 			BounceBullet();
 			/// ... find the Enemy script and call the Hurt function.
@@ -43,7 +43,7 @@ public class PistolSonic : MonoBehaviour
 			// Call the explosion instantiation.
 			OnExplode();
 		}
-        else if (col.tag == "Enemy")
+        else if (col.tag == "Enemy" && enemy != null && !enemy.dead)
 		{
 			BounceBullet();
 			/// ... find the Enemy script and call the Hurt function.
@@ -53,7 +53,7 @@ public class PistolSonic : MonoBehaviour
             OnExplode();
 
         }
-        else if (col.tag == "EnemyBomber")
+        else if (col.tag == "EnemyBomber" && enemy != null && !enemy.dead)
 		{
 			BounceBullet();
 

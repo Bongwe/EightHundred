@@ -25,6 +25,7 @@ public class CheckPoint : MonoBehaviour
         if (collision.tag == "Player" && playerControl != null)
         {
             mainManager.playerPosition = playerControl.GetComponent<Rigidbody2D>().position;
+            Debug.Log(mainManager.playerPosition);
         }
     }
 }

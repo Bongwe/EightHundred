@@ -256,7 +256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupClip: {fileID: 8300000, guid: fdcf63a3454d74ea5bdd46db131f3078, type: 3}
-  gun: {fileID: 1760267982}
+  gun: {fileID: 0}
+  shotGun: {fileID: 1760267982}
   pistolBullet: {fileID: 2643002702812956207, guid: bfde47ed024e4ee47856d59c0fd3cd54, type: 3}
   PistolSprite: {fileID: 21300000, guid: c6e688f179773254abdc46f66e71f843, type: 3}
   pistolThemeSong: {fileID: 8300000, guid: 0a4be4182afc4a345b3f26a78a8486e3, type: 3}
@@ -264,6 +265,7 @@ MonoBehaviour:
   playerControl: {fileID: 649692573}
   BulletText: {fileID: 1655038482}
   bombText: {fileID: 467740486}
+  shotGunType: ShotgunMachine
 --- !u!1 &33747569
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupClip: {fileID: 8300000, guid: fdcf63a3454d74ea5bdd46db131f3078, type: 3}
-  gun: {fileID: 1760267982}
+  gun: {fileID: 0}
+  shotGun: {fileID: 1760267982}
   pistolBullet: {fileID: 2643002702812956207, guid: bfde47ed024e4ee47856d59c0fd3cd54, type: 3}
   PistolSprite: {fileID: 21300000, guid: 84be39c1ad74fa7428c09df2d632b177, type: 3}
   pistolThemeSong: {fileID: 8300000, guid: 0a4be4182afc4a345b3f26a78a8486e3, type: 3}
@@ -405,6 +408,7 @@ MonoBehaviour:
   playerControl: {fileID: 649692573}
   BulletText: {fileID: 1655038482}
   bombText: {fileID: 467740486}
+  shotGunType: ShotgunAutomatic
 --- !u!1 &43986287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,7 +2403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupClip: {fileID: 8300000, guid: fdcf63a3454d74ea5bdd46db131f3078, type: 3}
-  gun: {fileID: 1760267982}
+  gun: {fileID: 0}
+  shotGun: {fileID: 1760267982}
   pistolBullet: {fileID: 2643002702812956207, guid: bfde47ed024e4ee47856d59c0fd3cd54, type: 3}
   PistolSprite: {fileID: 21300000, guid: 9ff83c79738f706449e7f3ba4b406c5c, type: 3}
   pistolThemeSong: {fileID: 8300000, guid: 0a4be4182afc4a345b3f26a78a8486e3, type: 3}
@@ -2407,6 +2412,7 @@ MonoBehaviour:
   playerControl: {fileID: 649692573}
   BulletText: {fileID: 1655038482}
   bombText: {fileID: 467740486}
+  shotGunType: Shotgun
 --- !u!58 &1225475124
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2600,7 +2606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupClip: {fileID: 8300000, guid: fdcf63a3454d74ea5bdd46db131f3078, type: 3}
-  gun: {fileID: 1760267982}
+  gun: {fileID: 0}
+  shotGun: {fileID: 1760267982}
   pistolBullet: {fileID: 2643002702812956207, guid: bfde47ed024e4ee47856d59c0fd3cd54, type: 3}
   PistolSprite: {fileID: 21300000, guid: fd1fae6da1516684a88515a6bf3627fe, type: 3}
   pistolThemeSong: {fileID: 8300000, guid: 0a4be4182afc4a345b3f26a78a8486e3, type: 3}
@@ -2608,6 +2615,7 @@ MonoBehaviour:
   playerControl: {fileID: 649692573}
   BulletText: {fileID: 1655038482}
   bombText: {fileID: 467740486}
+  shotGunType: ShotgunExplosive
 --- !u!1 &1336851014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,7 +2779,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1760267982}
-        m_TargetAssemblyTypeName: Gun, Assembly-CSharp
+        m_TargetAssemblyTypeName: ShotGun, Assembly-CSharp
         m_MethodName: shoot
         m_Mode: 1
         m_Arguments:
@@ -3500,10 +3508,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1760267980}
-  - component: {fileID: 1760267982}
   - component: {fileID: 1760267981}
+  - component: {fileID: 1760267982}
   m_Layer: 0
-  m_Name: Gun
+  m_Name: ShotGun
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3517,8 +3525,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760267979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.19, y: -0.02, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.19, y: -0.02, z: -1}
+  m_LocalScale: {x: 1.7, y: 1.7, z: 0}
   m_Children: []
   m_Father: {fileID: 649692578}
   m_RootOrder: 1
@@ -3583,19 +3591,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1760267979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc0599bff32bdf42aac391c586bb12c, type: 3}
+  m_Script: {fileID: 11500000, guid: 92438ac271134254abfb60c6a337a84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 0}
   speed: 20
   cannonBallSpeed: 10
   ammunition: 0
-  gunSound:
-  - {fileID: 8300000, guid: f40267d6bc22c744493e28ee49d65018, type: 3}
-  themeSong: {fileID: 0}
+  gunSound: []
+  themeSong: {fileID: 8300000, guid: 0a4be4182afc4a345b3f26a78a8486e3, type: 3}
   playerCtrl: {fileID: 649692573}
-  gameController: {fileID: 1655038482}
+  bulletText: {fileID: 1655038482}
   hasGun: 0
+  shotGunType: 
 --- !u!1 &1772344088
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class PistolPickup : MonoBehaviour
 	//private Animator anim;				// Reference to the animator component.
 	//private bool landed = false;		// Whether or not the crate has landed yet.
 	public Gun gun;
+	public ShotGun shotGun;
 	public Rigidbody2D pistolBullet;
 	public Sprite PistolSprite;
 	public AudioClip pistolThemeSong;
@@ -16,7 +17,9 @@ public class PistolPickup : MonoBehaviour
 	public PlayerControl playerControl;
 	public Bullets BulletText;
 	public BombText bombText;
+	public string shotGunType;
 	
+
 	void Awake()
 	{
 		// Setting up the reference.
@@ -35,11 +38,24 @@ public class PistolPickup : MonoBehaviour
 			other.GetComponent<LayBombs>().bombCount += 5;
 			other.GetComponent<LayBombs>().UpdateBombText();
 
-			gun.hasGun = true;
-			gun.weapon = pistolBullet;
-			gun.ammunition = 30;
-			gun.gameController.amoLeft = gun.ammunition;
-			gun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
+			if (gun != null)
+            {
+				gun.hasGun = true;
+				gun.weapon = pistolBullet;
+				gun.ammunition = 30;
+				gun.gameController.amoLeft = gun.ammunition;
+				gun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
+			}
+			if (shotGun != null)
+            {
+				shotGun.hasGun = true;
+				shotGun.weapon = pistolBullet;
+				shotGun.shotGunType = shotGunType;
+				shotGun.ammunition = 30;
+				shotGun.bulletText.amoLeft = shotGun.ammunition;
+				shotGun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
+			}
+			
 			themeSong.playThemeSong(pistolThemeSong);
 			BulletText.amoLeft  = 30;
 			BulletText.UpdateText();

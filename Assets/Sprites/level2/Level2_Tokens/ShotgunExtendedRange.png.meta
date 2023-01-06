@@ -1,0 +1,675 @@
+fileFormatVersion: 2
+guid: 28814c19659a6e742b058b3f51e92482
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5599669652562509589
+    second: ShotgunExtendedRange_0
+  - first:
+      213: 7885293410100950951
+    second: ShotgunExtendedRange_1
+  - first:
+      213: 4449842556363667137
+    second: ShotgunExtendedRange_2
+  - first:
+      213: 5986791414673749724
+    second: ShotgunExtendedRange_3
+  - first:
+      213: 6004942145257477388
+    second: ShotgunExtendedRange_4
+  - first:
+      213: -2420084227005565356
+    second: ShotgunExtendedRange_5
+  - first:
+      213: -4660527430042142823
+    second: ShotgunExtendedRange_6
+  - first:
+      213: -5392892909987186273
+    second: ShotgunExtendedRange_7
+  - first:
+      213: -2726143683934280364
+    second: ShotgunExtendedRange_8
+  - first:
+      213: 8036036408987664846
+    second: ShotgunExtendedRange_9
+  - first:
+      213: 3988458480801142642
+    second: ShotgunExtendedRange_10
+  - first:
+      213: -6421157886129129669
+    second: ShotgunExtendedRange_11
+  - first:
+      213: 3121204426615526620
+    second: ShotgunExtendedRange_12
+  - first:
+      213: -512714324255715814
+    second: ShotgunExtendedRange_13
+  - first:
+      213: 1778694133034961774
+    second: ShotgunExtendedRange_14
+  - first:
+      213: 1637683886671220405
+    second: ShotgunExtendedRange_15
+  - first:
+      213: 937121889656267986
+    second: ShotgunExtendedRange_16
+  - first:
+      213: 8389345195068555273
+    second: ShotgunExtendedRange_17
+  - first:
+      213: 2340150418675703137
+    second: ShotgunExtendedRange_18
+  - first:
+      213: -7270391805816371444
+    second: ShotgunExtendedRange_19
+  - first:
+      213: 6992569154834959304
+    second: ShotgunExtendedRange_20
+  - first:
+      213: -1831985892107636206
+    second: ShotgunExtendedRange_21
+  - first:
+      213: 1878343882524710276
+    second: ShotgunExtendedRange_22
+  - first:
+      213: 3643061744370033202
+    second: ShotgunExtendedRange_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1649
+        width: 399
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ff58471e506bd40800000000000000
+      internalID: 5599669652562509589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_1
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1651
+        width: 397
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7bbc214903e6d60800000000000000
+      internalID: 7885293410100950951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1649
+        width: 402
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6f87e8a3401cd30800000000000000
+      internalID: 4449842556363667137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_3
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1649
+        width: 404
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6bcff721b551350800000000000000
+      internalID: 5986791414673749724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_4
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1649
+        width: 404
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0518d8c017d55350800000000000000
+      internalID: 6004942145257477388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_5
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1648
+        width: 404
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456becab7322a6ed0800000000000000
+      internalID: -2420084227005565356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_6
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 1649
+        width: 402
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997bf52befa725fb0800000000000000
+      internalID: -4660527430042142823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_7
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 1648
+        width: 402
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99bd7c98789825b0800000000000000
+      internalID: -5392892909987186273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_8
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 1649
+        width: 404
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4552c6063caca2ad0800000000000000
+      internalID: -2726143683934280364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1231
+        width: 399
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1c0d7898cb58f60800000000000000
+      internalID: 8036036408987664846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_10
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1232
+        width: 402
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277db854bd9d95730800000000000000
+      internalID: 3988458480801142642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_11
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1231
+        width: 402
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37339e5ce673e6a0800000000000000
+      internalID: -6421157886129129669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_12
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1233
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd49bcf93eeb05b20800000000000000
+      internalID: 3121204426615526620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_13
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1232
+        width: 403
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ecb7fd90972e8f0800000000000000
+      internalID: -512714324255715814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_14
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 1233
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bce9bd3e03fa810800000000000000
+      internalID: 1778694133034961774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_15
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 1233
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be4b6f61d83ab610800000000000000
+      internalID: 1637683886671220405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_16
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 1233
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d46430c463510d00800000000000000
+      internalID: 937121889656267986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_17
+      rect:
+        serializedVersion: 2
+        x: 3325
+        y: 1232
+        width: 403
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900013a9101fc6470800000000000000
+      internalID: 8389345195068555273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 817
+        width: 399
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d952a3862e97020800000000000000
+      internalID: 2340150418675703137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_19
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 817
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07876c3c216a1b90800000000000000
+      internalID: -7270391805816371444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_20
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 817
+        width: 402
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb8a4d19989a0160800000000000000
+      internalID: 6992569154834959304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_21
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 817
+        width: 406
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212b563998a7396e0800000000000000
+      internalID: -1831985892107636206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunExtendedRange_22
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 818
+        width: 399
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485d9eb2fc7311a10800000000000000
+      internalID: 1878343882524710276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

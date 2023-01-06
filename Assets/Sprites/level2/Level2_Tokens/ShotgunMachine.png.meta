@@ -1,0 +1,672 @@
+fileFormatVersion: 2
+guid: 60fa55c9926bfbc4697a96a686f26d10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4651057973660554324
+    second: ShotgunMachine_0
+  - first:
+      213: -1148369789791722465
+    second: ShotgunMachine_1
+  - first:
+      213: -4133419696528753697
+    second: ShotgunMachine_2
+  - first:
+      213: 2897452052485741896
+    second: ShotgunMachine_3
+  - first:
+      213: 6579126952178138472
+    second: ShotgunMachine_4
+  - first:
+      213: -6925914235528944207
+    second: ShotgunMachine_5
+  - first:
+      213: 2508228275855104214
+    second: ShotgunMachine_6
+  - first:
+      213: -6291641406110835292
+    second: ShotgunMachine_7
+  - first:
+      213: -7289100204105151848
+    second: ShotgunMachine_8
+  - first:
+      213: -4996730856547276230
+    second: ShotgunMachine_9
+  - first:
+      213: -6533446245328010964
+    second: ShotgunMachine_10
+  - first:
+      213: -4340107303759031787
+    second: ShotgunMachine_11
+  - first:
+      213: -1215413702930977798
+    second: ShotgunMachine_12
+  - first:
+      213: 8346294333701108092
+    second: ShotgunMachine_13
+  - first:
+      213: 7622037307605682102
+    second: ShotgunMachine_14
+  - first:
+      213: 3407260808544547349
+    second: ShotgunMachine_15
+  - first:
+      213: -5041604054501086745
+    second: ShotgunMachine_16
+  - first:
+      213: -6599799480296041172
+    second: ShotgunMachine_17
+  - first:
+      213: 816114270689257459
+    second: ShotgunMachine_18
+  - first:
+      213: 3701594928472435416
+    second: ShotgunMachine_19
+  - first:
+      213: -6276655544601928549
+    second: ShotgunMachine_20
+  - first:
+      213: -8749493596348264379
+    second: ShotgunMachine_21
+  - first:
+      213: 5623214450545970893
+    second: ShotgunMachine_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShotgunMachine_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1637
+        width: 401
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45419cda590eb8040800000000000000
+      internalID: 4651057973660554324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_1
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1637
+        width: 401
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14aca0b2cb2010f0800000000000000
+      internalID: -1148369789791722465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_2
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1637
+        width: 399
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbfcc09fa423a6c0800000000000000
+      internalID: -4133419696528753697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_3
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1637
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d93265a41d53820800000000000000
+      internalID: 2897452052485741896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_4
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 1637
+        width: 401
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86db6c4fa11cd4b50800000000000000
+      internalID: 6579126952178138472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_5
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1637
+        width: 400
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5e976a2b532ef90800000000000000
+      internalID: -6925914235528944207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_6
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 1637
+        width: 399
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d81fe5e3540fc220800000000000000
+      internalID: 2508228275855104214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_7
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 1637
+        width: 401
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4addf96c9799fa8a0800000000000000
+      internalID: -6291641406110835292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_8
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 1637
+        width: 399
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ac512dbf9e7da90800000000000000
+      internalID: -7289100204105151848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1207
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a244182cb08aab0800000000000000
+      internalID: -4996730856547276230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_10
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1207
+        width: 399
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c214d1c61498455a0800000000000000
+      internalID: -6533446245328010964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_11
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1207
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5125d50f667d4c3c0800000000000000
+      internalID: -4340107303759031787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_12
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1207
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb28ad3dabf12fe0800000000000000
+      internalID: -1215413702930977798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_13
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 1207
+        width: 401
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c713c17d97ef3d370800000000000000
+      internalID: 8346294333701108092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_14
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1207
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b78c984c8ae6c960800000000000000
+      internalID: 7622037307605682102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_15
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 1207
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512786627a5094f20800000000000000
+      internalID: 3407260808544547349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_16
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 1207
+        width: 401
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e92b41f2df980ab0800000000000000
+      internalID: -5041604054501086745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_17
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 1207
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c259524075dc864a0800000000000000
+      internalID: -6599799480296041172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 776
+        width: 401
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f76f80fa9b635b00800000000000000
+      internalID: 816114270689257459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_19
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 779
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8daacfdb9f4be5330800000000000000
+      internalID: 3701594928472435416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_20
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 776
+        width: 399
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c148e8907d4e8a0800000000000000
+      internalID: -6276655544601928549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_21
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 779
+        width: 399
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5405b115eed839680800000000000000
+      internalID: -8749493596348264379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunMachine_22
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 779
+        width: 397
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcec2acefbba90e40800000000000000
+      internalID: 5623214450545970893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

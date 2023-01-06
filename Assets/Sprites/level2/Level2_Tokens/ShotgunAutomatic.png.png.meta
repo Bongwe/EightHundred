@@ -1,0 +1,672 @@
+fileFormatVersion: 2
+guid: 39d3261f26d2f0543ac5df6413cf2061
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 633175543024920344
+    second: ShotgunAutomatic.png_0
+  - first:
+      213: -3774525034947706298
+    second: ShotgunAutomatic.png_1
+  - first:
+      213: -835580108318138996
+    second: ShotgunAutomatic.png_2
+  - first:
+      213: 693980239931572768
+    second: ShotgunAutomatic.png_3
+  - first:
+      213: -2005382012815029979
+    second: ShotgunAutomatic.png_4
+  - first:
+      213: -7052813925204825141
+    second: ShotgunAutomatic.png_5
+  - first:
+      213: 4971076912432686550
+    second: ShotgunAutomatic.png_6
+  - first:
+      213: 4702150022141380365
+    second: ShotgunAutomatic.png_7
+  - first:
+      213: -1876076521436192159
+    second: ShotgunAutomatic.png_8
+  - first:
+      213: 1880545973605767859
+    second: ShotgunAutomatic.png_9
+  - first:
+      213: 1998781759506186318
+    second: ShotgunAutomatic.png_10
+  - first:
+      213: -8033118116368986955
+    second: ShotgunAutomatic.png_11
+  - first:
+      213: -6468040494060761679
+    second: ShotgunAutomatic.png_12
+  - first:
+      213: 4359307469192395088
+    second: ShotgunAutomatic.png_13
+  - first:
+      213: 2691738671024050774
+    second: ShotgunAutomatic.png_14
+  - first:
+      213: 3506863397574662592
+    second: ShotgunAutomatic.png_15
+  - first:
+      213: 7055816577687975330
+    second: ShotgunAutomatic.png_16
+  - first:
+      213: -8564882467206774675
+    second: ShotgunAutomatic.png_17
+  - first:
+      213: 7833388594540887964
+    second: ShotgunAutomatic.png_18
+  - first:
+      213: -4934064980131832539
+    second: ShotgunAutomatic.png_19
+  - first:
+      213: -8931287598551482739
+    second: ShotgunAutomatic.png_20
+  - first:
+      213: 9184314970052123893
+    second: ShotgunAutomatic.png_21
+  - first:
+      213: -8162722956192379022
+    second: ShotgunAutomatic.png_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1649
+        width: 399
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817277a3dcd79c800800000000000000
+      internalID: 633175543024920344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_1
+      rect:
+        serializedVersion: 2
+        x: 3323
+        y: 1654
+        width: 404
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6428f10aa713e9bc0800000000000000
+      internalID: -3774525034947706298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1649
+        width: 402
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d905e815c6764f0800000000000000
+      internalID: -835580108318138996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_3
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1649
+        width: 404
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0220342f95381a900800000000000000
+      internalID: 693980239931572768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_4
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1649
+        width: 404
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529c33f2fa37b24e0800000000000000
+      internalID: -2005382012815029979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_5
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1648
+        width: 404
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbec393a1f5f1e90800000000000000
+      internalID: -7052813925204825141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_6
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 1649
+        width: 402
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d522bc2d10dcf440800000000000000
+      internalID: 4971076912432686550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_7
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 1648
+        width: 402
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0705563884614140800000000000000
+      internalID: 4702150022141380365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_8
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 1649
+        width: 404
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1626858f756d6f5e0800000000000000
+      internalID: -1876076521436192159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1231
+        width: 399
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba1094799a091a10800000000000000
+      internalID: 1880545973605767859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_10
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1232
+        width: 402
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4085e69b691dbb10800000000000000
+      internalID: 1998781759506186318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_11
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1231
+        width: 402
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc421b62a1a48090800000000000000
+      internalID: -8033118116368986955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_12
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1233
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd8aa69077ec36a0800000000000000
+      internalID: -6468040494060761679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_13
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1232
+        width: 403
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0597befeb0f5f7c30800000000000000
+      internalID: 4359307469192395088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_14
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 1233
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65212925f0afa5520800000000000000
+      internalID: 2691738671024050774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_15
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 1233
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9d1401ea1eaa030800000000000000
+      internalID: 3506863397574662592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_16
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 1233
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a577694bcb4be160800000000000000
+      internalID: 7055816577687975330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_17
+      rect:
+        serializedVersion: 2
+        x: 3325
+        y: 1232
+        width: 403
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d604b2756cc632980800000000000000
+      internalID: -8564882467206774675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 817
+        width: 399
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fb4357c69c5bc60800000000000000
+      internalID: 7833388594540887964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_19
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 817
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d1c88da0ea68bb0800000000000000
+      internalID: -4934064980131832539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_20
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 817
+        width: 402
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ebc75cf31bd0480800000000000000
+      internalID: -8931287598551482739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_21
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 817
+        width: 406
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc524ffdcd357f70800000000000000
+      internalID: 9184314970052123893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotgunAutomatic.png_22
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 818
+        width: 399
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f0a3428be28be80800000000000000
+      internalID: -8162722956192379022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

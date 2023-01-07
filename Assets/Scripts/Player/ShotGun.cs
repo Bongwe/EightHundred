@@ -47,11 +47,17 @@ public class ShotGun : MonoBehaviour
 				if (shotGunType == "Shotgun")
 				{
 					shootShotgun();
-
+					shotGunReloaded = false;
+					applyShotGunRecoil();
+					StartCoroutine(ReloadShotgun(2.0f, playerCtrl.facingRight));
 				}
 				else if (shotGunType == "ShotgunAutomatic")
 				{
-					shootAutomaticShotgun();
+					//shootAutomaticShotgun();
+					shootShotgun();
+					shotGunReloaded = false;
+					applyShotGunRecoil();
+					StartCoroutine(ReloadShotgun(0.5f, playerCtrl.facingRight));
 				}
 				else if (shotGunType == "ShotgunExplosive")
 				{
@@ -61,9 +67,6 @@ public class ShotGun : MonoBehaviour
 				{
 					shootMachineShotgun();
 				}
-				shotGunReloaded = false;
-				applyShotGunRecoil();
-				StartCoroutine(ReloadShotgun(2.0f, playerCtrl.facingRight));
 
 			}
 		}
@@ -79,8 +82,6 @@ public class ShotGun : MonoBehaviour
 		yield return new WaitForSeconds(time);
 
 		AudioSource.PlayClipAtPoint(reloadSound, transform.position);
-
-
 		Rigidbody2D shotgunShellInstance = Instantiate(shotGunShell, transform.position, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
 
 		if (playerCtrl.facingRight)

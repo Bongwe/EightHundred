@@ -9,6 +9,7 @@ public class ShotGun : MonoBehaviour
 	public float cannonBallSpeed = 10f;
 	public int ammunition = 0;
 	public AudioClip[] gunSound;                // Array of clips for when the player shoots.
+	public AudioClip reloadSound;                // Array of clips for when the player shoots.
 	public AudioClip themeSong;
 
 	public PlayerControl playerCtrl;        // Reference to the PlayerControl script.
@@ -20,6 +21,8 @@ public class ShotGun : MonoBehaviour
 
 	private bool isShooting = false;
 	public string shotGunType;
+	public bool shotGunReloaded = true;
+	public Rigidbody2D shotGunShell;
 
 	void Awake()
 	{
@@ -34,15 +37,13 @@ public class ShotGun : MonoBehaviour
 		// If the fire button is pressed...
 		if (isShooting && hasGun && ammunition > 0)
 		{
-			// ... set the animator Shoot trigger parameter and play the audioclip.
-			//anim.SetTrigger("Shoot");
-			//GetComponent<AudioSource>().Play();
-			AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
-			ammunition--;
-			bulletText.amoLeft = ammunition;
 
-			if (isShooting && weapon.tag == "Bullet")
+			if (isShooting && shotGunReloaded && weapon.tag == "Bullet")
 			{
+				AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
+				ammunition--;
+				bulletText.amoLeft = ammunition;
+
 				if (shotGunType == "Shotgun")
 				{
 					shootShotgun();
@@ -60,12 +61,37 @@ public class ShotGun : MonoBehaviour
 				{
 					shootMachineShotgun();
 				}
+				shotGunReloaded = false;
+				applyShotGunRecoil();
+				StartCoroutine(ReloadShotgun(2.0f, playerCtrl.facingRight));
+
 			}
 		}
 		else if (Input.GetButtonDown("Fire1") && hasGun && ammunition == 0)
 			AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
 
 		isShooting = false;
+
+	}
+
+	IEnumerator ReloadShotgun(float time, bool facingRight)
+	{
+		yield return new WaitForSeconds(time);
+
+		AudioSource.PlayClipAtPoint(reloadSound, transform.position);
+
+
+		Rigidbody2D shotgunShellInstance = Instantiate(shotGunShell, transform.position, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
+
+		if (playerCtrl.facingRight)
+		{
+			shotgunShellInstance.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 16 * 16);
+		}
+		else
+        {
+			shotgunShellInstance.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 16 * 16);
+		}
+		shotGunReloaded = true;
 
 	}
 
@@ -117,5 +143,17 @@ public class ShotGun : MonoBehaviour
 	public void shootMachineShotgun()
 	{
 	}
+
+	public void applyShotGunRecoil()
+	{
+		float yPlaneDistance = 150;
+		float xPlaneDistance = 150;
+
+		if (!playerCtrl.facingRight)
+			playerCtrl.GetComponent<Rigidbody2D>().AddForce(new Vector2(xPlaneDistance, yPlaneDistance));
+		else
+			playerCtrl.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1 * xPlaneDistance, yPlaneDistance));
+	}
+	
 
 }

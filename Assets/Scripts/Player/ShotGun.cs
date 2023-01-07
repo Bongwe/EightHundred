@@ -41,41 +41,24 @@ public class ShotGun : MonoBehaviour
 			ammunition--;
 			bulletText.amoLeft = ammunition;
 
-
-			// If the player is facing right...
-			if (playerCtrl.facingRight)
+			if (isShooting && weapon.tag == "Bullet")
 			{
-				if (isShooting && weapon.tag == "Bullet")
+				if (shotGunType == "Shotgun")
 				{
-					if (shotGunType == "Shotgun")
-                    {
-						shootShotgun();
+					shootShotgun();
 
-					} else if (shotGunType == "ShotgunAutomatic")
-					{
-						shootAutomaticShotgun();
-                    }
-					else if (shotGunType == "ShotgunExplosive")
-					{
-						shootExplosiveShotgun();
-					}
-					else if (shotGunType == "ShotgunMachine")
-					{
-						shootMachineShotgun();
-					}
 				}
-
-			}
-			// If the player is facing left...
-			else
-			{
-				Rigidbody2D bulletInstance;
-
-				if (isShooting && weapon.tag == "Bullet")
+				else if (shotGunType == "ShotgunAutomatic")
 				{
-					// Otherwise instantiate the rocket facing left and set it's velocity to the left.
-					bulletInstance = Instantiate(weapon, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
-					bulletInstance.velocity = new Vector2(-speed, 0);
+					shootAutomaticShotgun();
+				}
+				else if (shotGunType == "ShotgunExplosive")
+				{
+					shootExplosiveShotgun();
+				}
+				else if (shotGunType == "ShotgunMachine")
+				{
+					shootMachineShotgun();
 				}
 			}
 		}
@@ -93,10 +76,35 @@ public class ShotGun : MonoBehaviour
 
 	public void shootShotgun()
 	{
-		Vector2 bulletSpawnPosition = transform.position;
-		Rigidbody2D bulletInstance;
-		bulletInstance = Instantiate(weapon, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
-		bulletInstance.velocity = new Vector2(speed, 0);
+		Rigidbody2D[] bulletInstance = new Rigidbody2D[4];
+		Vector2[] bulletPositions = new Vector2[4];
+
+		for (int i = 0; i < bulletInstance.Length; i++)
+		{
+			float bulletYPosition = Random.Range(0.0f, 0.9f);
+			float bulletXPosition = Random.Range(0.0f, 4.0f);
+			bulletPositions[i] = new Vector2(bulletXPosition, bulletYPosition);
+		}
+
+		if (playerCtrl.facingRight)
+		{
+			for (int i = 0; i < bulletInstance.Length; i++)
+			{
+				Vector2 newBulletPosition = new Vector2(transform.position.x + bulletPositions[i].x, transform.position.y + bulletPositions[i].y);
+				bulletInstance[i] = Instantiate(weapon, newBulletPosition, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
+				bulletInstance[i].velocity = new Vector2(speed, 0);
+			}
+
+		}
+		else
+		{
+			for (int i = 0; i < bulletInstance.Length; i++)
+			{
+				Vector2 newBulletPosition = new Vector2(transform.position.x + (bulletPositions[i].x * -1), transform.position.y + bulletPositions[i].y);
+				bulletInstance[i] = Instantiate(weapon, newBulletPosition, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
+				bulletInstance[i].velocity = new Vector2(-1 * speed, 0);
+			}
+		}
 	}
 	public void shootAutomaticShotgun()
 	{

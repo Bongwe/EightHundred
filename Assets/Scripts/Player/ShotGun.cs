@@ -23,6 +23,7 @@ public class ShotGun : MonoBehaviour
 	public string shotGunType;
 	public bool shotGunReloaded = true;
 	public Rigidbody2D shotGunShell;
+	public Vector2 shotGunShellForceDirection;
 
 	void Awake()
 	{
@@ -61,7 +62,10 @@ public class ShotGun : MonoBehaviour
 				}
 				else if (shotGunType == "ShotgunExplosive")
 				{
-					shootExplosiveShotgun();
+					shootShotgun();
+					shotGunReloaded = false;
+					applyShotGunRecoil();
+					StartCoroutine(ReloadShotgun(0.2f, playerCtrl.facingRight));
 				}
 				else if (shotGunType == "ShotgunMachine")
 				{
@@ -86,11 +90,11 @@ public class ShotGun : MonoBehaviour
 
 		if (playerCtrl.facingRight)
 		{
-			shotgunShellInstance.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 16 * 16);
+			shotgunShellInstance.GetComponent<Rigidbody2D>().AddForce(shotGunShellForceDirection);
 		}
 		else
         {
-			shotgunShellInstance.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 16 * 16);
+			shotgunShellInstance.GetComponent<Rigidbody2D>().AddForce(shotGunShellForceDirection);
 		}
 		shotGunReloaded = true;
 

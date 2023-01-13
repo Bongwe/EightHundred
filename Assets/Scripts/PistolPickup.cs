@@ -18,7 +18,9 @@ public class PistolPickup : MonoBehaviour
 	public Bullets BulletText;
 	public BombText bombText;
 	public string shotGunType;
-	
+	public Rigidbody2D shotGunShell;
+	public Vector2 shotGunShellForceDirection;
+
 
 	void Awake()
 	{
@@ -54,6 +56,12 @@ public class PistolPickup : MonoBehaviour
 				shotGun.ammunition = 30;
 				shotGun.bulletText.amoLeft = shotGun.ammunition;
 				shotGun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
+			}
+
+			if (shotGunShell != null)
+            {
+				shotGun.shotGunShell = shotGunShell;
+				shotGun.shotGunShellForceDirection = shotGunShellForceDirection;
 			}
 			
 			themeSong.playThemeSong(pistolThemeSong);

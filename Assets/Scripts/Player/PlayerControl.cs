@@ -40,9 +40,8 @@ public class PlayerControl : MonoBehaviour
 		groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator>();
 
-		mainManager = GameObject.FindGameObjectWithTag("MainManager").GetComponent<MainManager>();
-		Debug.Log(mainManager.playerPosition);
-		GetComponent<Rigidbody2D>().position = mainManager.playerPosition;
+		//mainManager = GameObject.FindGameObjectWithTag("MainManager").GetComponent<MainManager>();
+		//GetComponent<Rigidbody2D>().position = mainManager.playerPosition;
 	}
 
 	void Start()

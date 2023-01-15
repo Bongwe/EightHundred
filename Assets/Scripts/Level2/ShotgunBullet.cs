@@ -51,9 +51,9 @@ public class ShotgunBullet : MonoBehaviour
 		else if(col.tag == "metroTrain")
 		{	
 			// ... find the Enemy script and call the Hurt function.
-			col.gameObject.GetComponent<metroTrain>().pistolDamage(damage);
+			col.gameObject.GetComponent<MetroTrain>().pistolDamage(damage);
 
-			if(!col.gameObject.GetComponent<metroTrain>().trainDestroyed)
+			if(!col.gameObject.GetComponent<MetroTrain>().trainDestroyed)
 			{
 				// Call the explosion instantiation.
 				OnExplode();

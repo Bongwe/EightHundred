@@ -1,7 +1,7 @@
 ﻿ using UnityEngine;
 using System.Collections;
 
-public class metroTrain : MonoBehaviour
+public class MetroTrain : MonoBehaviour
 {
 	public AudioClip boom;					// Audioclip of explosion.
 	public AudioClip fuse;					// Audioclip of fuse.

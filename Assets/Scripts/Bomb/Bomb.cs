@@ -110,10 +110,10 @@ public class Bomb : MonoBehaviour
 		}
 		else if(col.tag == "metroTrain")
 		{	
-			if(!col.gameObject.GetComponent<metroTrain>().trainDestroyed)
+			if(!col.gameObject.GetComponent<MetroTrain>().trainDestroyed)
 			{
 				// ... find the Enemy script and call the Hurt function.
-				col.gameObject.GetComponent<metroTrain>().pistolDamage(damage);
+				col.gameObject.GetComponent<MetroTrain>().pistolDamage(damage);
 				Explode();
 			}
 			

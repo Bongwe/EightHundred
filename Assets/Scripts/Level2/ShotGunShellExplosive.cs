@@ -6,10 +6,11 @@ public class ShotGunShellExplosive : MonoBehaviour
 {
 
     public AudioSource explosionSound;
+    public ShotgunShellExplosionAnimation ShotgunShellExplosionAnimation;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 10.0f);
+        StartCoroutine(ExplodeCoroutine(2.0f));
     }
 
     // Update is called once per frame
@@ -20,18 +21,25 @@ public class ShotGunShellExplosive : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy" || other.tag == "Player")
+        if (other.tag == "Enemy")
         {
-            explosionSound.Play();
-            Destroy(gameObject);
+            Explode();
         }   
 
     }
 
-   /* IEnumerator Explode(float time)
+    void Explode()
+    {
+        explosionSound.Play();
+        Instantiate(ShotgunShellExplosionAnimation, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+        Destroy(gameObject, 0.5f);
+
+    }
+
+    IEnumerator ExplodeCoroutine(float time)
     {
         yield return new WaitForSeconds(time);
-      
-    }*/
+        Explode();
+    }
 }
 

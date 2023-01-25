@@ -25,6 +25,8 @@ TagManager:
   - PistolExplosiveBullet
   - ShootingShack
   - MainManager
+  - TrainSmoke
+  - metroTrain
   layers:
   - Default
   - TransparentFX

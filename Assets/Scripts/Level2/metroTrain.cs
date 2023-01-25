@@ -6,9 +6,9 @@ public class MetroTrain : MonoBehaviour
 	public AudioClip boom;					// Audioclip of explosion.
 	public AudioClip fuse;					// Audioclip of fuse.
 	public float fuseTime = 1.5f;
-	public GameObject explosion;			// Prefab of explosion effect.
-	private int HP = 10;							// How many times the enemy can be hit before it dies.
-	private static int staticHP = 10;
+	public GameObject explosion;            // Prefab of explosion effect.
+	public int HP = 20;							// How many times the enemy can be hit before it dies.
+	private static int staticHP = 20;
 	private Animator anim;					// Reference to the shack's animator component.
 	public Sprite damagedShack;			// An optional sprite of the enemy when it's damaged.
 	public bool trainDestroyed = false;
@@ -23,8 +23,8 @@ public class MetroTrain : MonoBehaviour
 	void Awake ()
 	{
 		// Setting up references.
-		explosionShotFX = GameObject.FindGameObjectWithTag("trainShotExplosion").GetComponent<ParticleSystem>();
-		explosionSmokeFX = GameObject.FindGameObjectWithTag("trainSmokeExplosion").GetComponent<ParticleSystem>();
+		//explosionShotFX = GameObject.FindGameObjectWithTag("smoke").GetComponent<ParticleSystem>();
+		//explosionSmokeFX = GameObject.FindGameObjectWithTag("TrainSmoke").GetComponent<ParticleSystem>();
 		//explosionFX = GameObject.FindGameObjectWithTag("trainExplosion").GetComponent<ParticleSystem>();
 		anim = GetComponent<Animator>();
 	}
@@ -43,8 +43,8 @@ public class MetroTrain : MonoBehaviour
 		HP = HP - damage;
 		showDamageOnTrain();
 
-		if(!trainDestroyed)
-			playParticleSystem(explosionShotFX);
+		/*if(!trainDestroyed)
+			playParticleSystem(explosionShotFX);*/
 
 		if (HP <= 0 && !trainDestroyed) {
 			Explode ();
@@ -54,9 +54,9 @@ public class MetroTrain : MonoBehaviour
 		}
 	}
 	
-	double damageOneHP = staticHP - 2;
-	double damageTwoHP = staticHP - 4 ;
-	double damageThreeHP = staticHP - 6;
+	double damageOneHP = staticHP - 6;
+	double damageTwoHP = staticHP - 12;
+	double damageThreeHP = staticHP - 18;
 	double damageFourHP = 0;
 	bool damageOne =false;
 	bool damageTwo =false;
@@ -65,45 +65,40 @@ public class MetroTrain : MonoBehaviour
 
 	public void showDamageOnTrain()
 	{
-		if (HP == damageOneHP) {
-			anim.SetBool ("damageOne", true);
-			anim.SetBool ("damageTwo", false);
-			anim.SetBool ("damageThree", false);
-			anim.SetBool ("damageFour", false);
+		if (HP >= 12 && HP < 20) {
+			anim.SetBool ("damage_1", true);
+			anim.SetBool ("damage_2", false);
+			anim.SetBool ("damage_2", false);
+			anim.SetBool ("damage_3", false);
 			damageOne = true;
 			
-		} else if (HP == damageTwoHP) {
-			anim.SetBool ("damageOne", false);
-			anim.SetBool ("damageTwo", true);
-			anim.SetBool ("damageThree", false);
-			anim.SetBool ("damageFour", false);
+		} else if (HP >= 8 && HP <= 12) {
+			anim.SetBool ("damage_1", false);
+			anim.SetBool ("damage_2", true);
+			anim.SetBool ("damage_2", false);
+			anim.SetBool ("damage_3", false);
 			//damage2Smoke.enableEmission = true;
 			damageOne = false;
 			damageTwo = true;
 			
-		} else if (HP == damageThreeHP) {
-			anim.SetBool ("damageOne", false);
-			anim.SetBool ("damageTwo", false);
-			anim.SetBool ("damageThree", true);
-			anim.SetBool ("damageFour", false);
+		} else if (HP >= 4 && HP <= 8) {
+			anim.SetBool ("damage_1", false);
+			anim.SetBool ("damage_2", false);
+			anim.SetBool ("damage_2", true);
+			anim.SetBool ("damage_3", false);
 			//damage3Smoke.enableEmission = true;
 			damageOne = false;
 			damageTwo = false;
 			damageThree = true;
 			
-		} else if (HP <= damageFourHP) {
-			anim.SetBool ("damageOne", false);
-			anim.SetBool ("damageTwo", false);
-			anim.SetBool ("damageThree", false);
-			anim.SetBool ("damageFour", true);
+		} else if (HP <= 0) {
+			anim.SetBool ("damage_1", false);
+			anim.SetBool ("damage_2", false);
+			anim.SetBool ("damage_2", false);
+			anim.SetBool ("damage_3", true);
 			damageThree = false;
 			damageFour = true;
 		}
-	}
-
-	void FixedUpdate ()
-	{
-		
 	}
 
 	public void playParticleSystem(ParticleSystem particleSystem )
@@ -118,21 +113,18 @@ public class MetroTrain : MonoBehaviour
 			anim.Play ("Level2MetroTrainShot");
 		}*/
 
-		if (col.tag == "shotgunBullet" || col.tag == "Bomb" && !trainDestroyed) {
+		if (col.tag == "Bullet" || col.tag == "Bomb" && !trainDestroyed) {
 			if (damageOne)
 			{
-				anim.Play ("Level2MetroTrainDamage1Shot");
-				Debug.Log ("Level2MetroTrainDamage1Shot");
+				anim.Play ("TrainShot");
 			}
 			else if (damageTwo)
 			{
-				anim.Play ("Level2MetroTrainDamage2Shot");
-				Debug.Log ("Level2MetroTrainDamage2Shot");
+				anim.Play ("TrainShot");
 			}
 			else if (damageThree)
 			{
-				anim.Play ("Level2MetroTrainDamage3Shot");
-				Debug.Log ("Level2MetroTrainDamage3Shot");
+				anim.Play ("TrainShot");
 			}
 			else if (damageFour || HP < 0)
 			{
@@ -140,18 +132,18 @@ public class MetroTrain : MonoBehaviour
 			}
 			else
 			{
-				anim.Play ("Level2MetroTrainShot");
-				Debug.Log ("Level2MetroTrainShot");
+				anim.Play ("TrainShot");
 			}
+			showDamageOnTrain();
 		}
 	}
 	
 	void gunShotExplode()
 	{
-		explosionFX.transform.position = transform.position;
-		explosionFX.Play();
+		//explosionSmokeFX.transform.position = transform.position;
+		//explosionSmokeFX.Play();
 		
-		// Instantiate the explosion prefab.
+		 //Instantiate the explosion prefab.
 		//Instantiate(explosion,transform.position, Quaternion.identity);
 	}
 	

@@ -18,8 +18,11 @@ public class MetroTrain : MonoBehaviour
 	//particle systems
 	private ParticleSystem explosionShotFX; 
 	private ParticleSystem explosionSmokeFX; 
-	private ParticleSystem explosionFX; 
-	
+	private ParticleSystem explosionFX;
+
+	SpriteRenderer m_SpriteRenderer;
+	private float gunShotTime = 0.1f;
+
 	void Awake ()
 	{
 		// Setting up references.
@@ -27,6 +30,8 @@ public class MetroTrain : MonoBehaviour
 		//explosionSmokeFX = GameObject.FindGameObjectWithTag("TrainSmoke").GetComponent<ParticleSystem>();
 		//explosionFX = GameObject.FindGameObjectWithTag("trainExplosion").GetComponent<ParticleSystem>();
 		anim = GetComponent<Animator>();
+		m_SpriteRenderer = GetComponent<SpriteRenderer>();
+		//Set the GameObject's Color quickly to a set Color (blue)
 	}
 	
 	public void bombDamage(int damage)
@@ -65,27 +70,27 @@ public class MetroTrain : MonoBehaviour
 
 	public void showDamageOnTrain()
 	{
-		if (HP >= 12 && HP < 20) {
+		if (HP > 12 && HP < 20) {
 			anim.SetBool ("damage_1", true);
 			anim.SetBool ("damage_2", false);
-			anim.SetBool ("damage_2", false);
 			anim.SetBool ("damage_3", false);
+			anim.SetBool ("damage_4", false);
 			damageOne = true;
 			
 		} else if (HP >= 8 && HP <= 12) {
 			anim.SetBool ("damage_1", false);
 			anim.SetBool ("damage_2", true);
-			anim.SetBool ("damage_2", false);
 			anim.SetBool ("damage_3", false);
+			anim.SetBool ("damage_4", false);
 			//damage2Smoke.enableEmission = true;
 			damageOne = false;
 			damageTwo = true;
 			
-		} else if (HP >= 4 && HP <= 8) {
+		} else if (HP >= 4 && HP < 8) {
 			anim.SetBool ("damage_1", false);
 			anim.SetBool ("damage_2", false);
-			anim.SetBool ("damage_2", true);
-			anim.SetBool ("damage_3", false);
+			anim.SetBool ("damage_3", true);
+			anim.SetBool ("damage_4", false);
 			//damage3Smoke.enableEmission = true;
 			damageOne = false;
 			damageTwo = false;
@@ -94,8 +99,8 @@ public class MetroTrain : MonoBehaviour
 		} else if (HP <= 0) {
 			anim.SetBool ("damage_1", false);
 			anim.SetBool ("damage_2", false);
-			anim.SetBool ("damage_2", false);
-			anim.SetBool ("damage_3", true);
+			anim.SetBool ("damage_3", false);
+			anim.SetBool ("damage_4", true);
 			damageThree = false;
 			damageFour = true;
 		}
@@ -116,15 +121,22 @@ public class MetroTrain : MonoBehaviour
 		if (col.tag == "Bullet" || col.tag == "Bomb" && !trainDestroyed) {
 			if (damageOne)
 			{
-				anim.Play ("TrainShot");
+				//anim.Play ("TrainShot");
+				m_SpriteRenderer.color = Color.red;
+				StartCoroutine(TrainShot(gunShotTime));
+
 			}
 			else if (damageTwo)
 			{
-				anim.Play ("TrainShot");
+				//anim.Play ("TrainShot");
+				m_SpriteRenderer.color = Color.red;
+				StartCoroutine(TrainShot(gunShotTime));
 			}
 			else if (damageThree)
 			{
-				anim.Play ("TrainShot");
+				//anim.Play ("TrainShot");
+				m_SpriteRenderer.color = Color.red;
+				StartCoroutine(TrainShot(gunShotTime));
 			}
 			else if (damageFour || HP < 0)
 			{
@@ -132,7 +144,8 @@ public class MetroTrain : MonoBehaviour
 			}
 			else
 			{
-				anim.Play ("TrainShot");
+				/*m_SpriteRenderer.color = Color.red;
+				StartCoroutine(TrainShot(gunShotTime));*/
 			}
 			showDamageOnTrain();
 		}
@@ -161,4 +174,11 @@ public class MetroTrain : MonoBehaviour
 		Destroy (Spawner);
 
 	}
+
+	IEnumerator TrainShot(float time)
+	{
+		yield return new WaitForSeconds(time);
+		m_SpriteRenderer.color = Color.white;
+	}
+
 }

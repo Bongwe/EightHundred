@@ -16,8 +16,8 @@ public class MetroTrain : MonoBehaviour
 	private bool exploded = false;
 
 	//particle systems
-	private ParticleSystem explosionShotFX; 
-	private ParticleSystem explosionSmokeFX; 
+	private ParticleSystem explosionShotFX;
+	public ParticleSystem explosionSmokeFX; 
 	private ParticleSystem explosionFX;
 
 	SpriteRenderer m_SpriteRenderer;
@@ -51,14 +51,20 @@ public class MetroTrain : MonoBehaviour
 		/*if(!trainDestroyed)
 			playParticleSystem(explosionShotFX);*/
 
-		if (HP <= 0 && !trainDestroyed) {
+		if (HP <= 4 && !trainDestroyed) {
 			Explode ();
 			//playParticleSystem(explosionFX );
 			playParticleSystem(explosionSmokeFX);
 			trainDestroyed = true;
 		}
 	}
-	
+
+	public void playParticleSystem(ParticleSystem particleSystem)
+	{
+        ParticleSystem particleSystem1 = Instantiate(particleSystem, transform.position, Quaternion.Euler(new Vector3(0, 0, 180.0f)));
+		particleSystem1.Play();
+	}
+
 	double damageOneHP = staticHP - 6;
 	double damageTwoHP = staticHP - 12;
 	double damageThreeHP = staticHP - 18;
@@ -104,12 +110,6 @@ public class MetroTrain : MonoBehaviour
 			damageThree = false;
 			damageFour = true;
 		}
-	}
-
-	public void playParticleSystem(ParticleSystem particleSystem )
-	{
-		particleSystem.transform.position = transform.position;
-		particleSystem.Play();
 	}
 
 	void OnTriggerEnter2D (Collider2D col) 

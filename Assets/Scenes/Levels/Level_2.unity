@@ -1548,8 +1548,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -562369367
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf13dd43bff66b3428b09dbd22fccaf4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1622,6 +1622,7 @@ MonoBehaviour:
   damagedShack: {fileID: 0}
   trainDestroyed: 0
   Spawner: {fileID: 0}
+  explosionSmokeFX: {fileID: 1408176817146118663, guid: c38cb3770d8b135439a38a26535a4d5f, type: 3}
 --- !u!95 &634396279
 Animator:
   serializedVersion: 3
@@ -1661,6 +1662,7 @@ MonoBehaviour:
   damagedShack: {fileID: 0}
   trainDestroyed: 0
   Spawner: {fileID: 0}
+  explosionSmokeFX: {fileID: 0}
 --- !u!1 &644168913
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,8 +3616,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -562369367
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 257376de510c322478dce017b9e48f7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -85,6 +85,9 @@ TagManager:
   - name: Shacks
     uniqueID: 246926709
     locked: 0
+  - name: Train
+    uniqueID: 3732597929
+    locked: 0
   - name: Fence
     uniqueID: 2801854101
     locked: 0

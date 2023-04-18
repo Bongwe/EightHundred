@@ -12,6 +12,7 @@ public class PistolPickup : MonoBehaviour
 	public ShotGun shotGun;
 	public Rigidbody2D pistolBullet;
 	public Sprite PistolSprite;
+	public ShotGunHolder shotGunHolder;
 	public AudioClip pistolThemeSong;
 	public ThemeSong themeSong;
 	public PlayerControl playerControl;
@@ -55,7 +56,10 @@ public class PistolPickup : MonoBehaviour
 				shotGun.shotGunType = shotGunType;
 				shotGun.ammunition = 30;
 				shotGun.bulletText.amoLeft = shotGun.ammunition;
-				shotGun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
+				//shotGun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
+                ShotGunHolder shotGunHolder1 = Instantiate(shotGunHolder);
+				shotGunHolder1.transform.position = shotGun.transform.position;
+				shotGunHolder1.transform.parent = shotGun.transform;
 			}
 
 			if (shotGunShell != null)

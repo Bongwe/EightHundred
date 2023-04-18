@@ -85,14 +85,14 @@ TagManager:
   - name: Shacks
     uniqueID: 246926709
     locked: 0
+  - name: Enemy
+    uniqueID: 2497063527
+    locked: 0
   - name: Train
     uniqueID: 3732597929
     locked: 0
   - name: Fence
     uniqueID: 2801854101
-    locked: 0
-  - name: Enemy
-    uniqueID: 2497063527
     locked: 0
   - name: Loot
     uniqueID: 1954402159
@@ -117,4 +117,7 @@ TagManager:
     locked: 0
   - name: Fence
     uniqueID: 704821493
+    locked: 0
+  - name: ShotGun
+    uniqueID: 1438323617
     locked: 0

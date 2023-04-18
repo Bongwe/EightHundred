@@ -24,6 +24,7 @@ public class ShotGun : MonoBehaviour
 	public bool shotGunReloaded = true;
 	public Rigidbody2D shotGunShell;
 	public Vector2 shotGunShellForceDirection;
+	public ShotGunHolder shotGunHolder;
 
 	void Awake()
 	{

@@ -56,10 +56,10 @@ public class PistolPickup : MonoBehaviour
 				shotGun.shotGunType = shotGunType;
 				shotGun.ammunition = 30;
 				shotGun.bulletText.amoLeft = shotGun.ammunition;
-				//shotGun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
-                ShotGunHolder shotGunHolder1 = Instantiate(shotGunHolder);
-				shotGunHolder1.transform.position = shotGun.transform.position;
-				shotGunHolder1.transform.parent = shotGun.transform;
+				shotGun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
+                //ShotGunHolder shotGunHolder1 = Instantiate(shotGunHolder);
+				//shotGunHolder1.transform.position = shotGun.transform.position;
+				//shotGunHolder1.transform.parent = shotGun.transform;
 			}
 
 			if (shotGunShell != null)

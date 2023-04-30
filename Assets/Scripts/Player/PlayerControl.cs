@@ -154,6 +154,26 @@ public class PlayerControl : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
+	public void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.tag == "Enemy")
+		{
+			Debug.Log("awe");
+			Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
+			// For each collider...
+			// Find a vector from the bomb to the enemy.
+			if (rb != null) {
+				Vector3 deltaPos = rb.transform.position - transform.position;
+
+				// Apply a force in this direction with a magnitude of bombForce.
+				Vector3 force = deltaPos.normalized * 100;
+				rb.AddForce(force);
+			}
+				
+		}
+
+	}
+
 	public IEnumerator Taunt()
 	{
 		// Check the random chance of taunting.
@@ -189,4 +209,6 @@ public class PlayerControl : MonoBehaviour
 			// Otherwise return this index.
 			return i;
 	}
+
+	
 }

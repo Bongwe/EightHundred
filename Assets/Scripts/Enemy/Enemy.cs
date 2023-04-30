@@ -148,6 +148,10 @@ public class Enemy : MonoBehaviour, IEnemy
 			rigidbody2D.AddForce(new Vector2( -1*xPlaneDistance,yPlaneDistance));
 
 		gun.SetActive (false);
+		//Fetch the SpriteRenderer from the GameObject
+		SpriteRenderer m_SpriteRenderer = GetComponent<SpriteRenderer>();
+		//Set the GameObject's Color quickly to a set Color (blue)
+		m_SpriteRenderer.color = Color.black;
 		//	Destroy (gameObject);
 	}
 

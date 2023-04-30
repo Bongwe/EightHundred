@@ -7,6 +7,7 @@ public class ShotGunShellExplosive : MonoBehaviour
 
     public AudioSource explosionSound;
     public ShotgunShellExplosionAnimation ShotgunShellExplosionAnimation;
+    public int damage = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,8 @@ public class ShotGunShellExplosive : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
+            other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+
             Explode();
         }   
 

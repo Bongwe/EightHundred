@@ -11,7 +11,8 @@ public class BulletPickup : MonoBehaviour
 	public int numOfBullets = 30;
 	public Bullets bullets;
 	public Gun gun;
-	
+	public ShotGun shotGun;
+
 	void Awake()
 	{	
 		// Setting up the reference.
@@ -27,11 +28,19 @@ public class BulletPickup : MonoBehaviour
             AudioSource.PlayClipAtPoint(pickupClip, transform.position);
 
             // Increase the number of bullets the player has.
-            gun.ammunition += numOfBullets;
             bullets.amoLeft += numOfBullets;
+			if (gun != null)
+			{
+				gun.ammunition += numOfBullets;
 
-            // Destroy the crate.
-            Destroy(gameObject);
+			} else if (shotGun != null)
+			{
+				shotGun.ammunition += numOfBullets;
+
+			}
+
+			// Destroy the crate.
+			Destroy(gameObject);
         }
 
     }

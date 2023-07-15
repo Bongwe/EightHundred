@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 9bdec787329e08842887e0b7364e4483
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7673502912456609137
+    second: IncreaseCapacityToekn_0
+  - first:
+      213: 392463324602730536
+    second: IncreaseCapacityToekn_1
+  - first:
+      213: 2917634163755496822
+    second: IncreaseCapacityToekn_2
+  - first:
+      213: 4744931316284529413
+    second: IncreaseCapacityToekn_3
+  - first:
+      213: -7109282831792750888
+    second: IncreaseCapacityToekn_4
+  - first:
+      213: -881490004785268917
+    second: IncreaseCapacityToekn_5
+  - first:
+      213: -3765252739390193499
+    second: IncreaseCapacityToekn_6
+  - first:
+      213: 1168491230571278497
+    second: IncreaseCapacityToekn_7
+  - first:
+      213: -7654787591679979416
+    second: IncreaseCapacityToekn_8
+  - first:
+      213: 8530714397699644333
+    second: IncreaseCapacityToekn_9
+  - first:
+      213: -3258672974328365709
+    second: IncreaseCapacityToekn_10
+  - first:
+      213: -553959024020191300
+    second: IncreaseCapacityToekn_11
+  - first:
+      213: -8038814905177776240
+    second: IncreaseCapacityToekn_12
+  - first:
+      213: -4903231843029729531
+    second: IncreaseCapacityToekn_13
+  - first:
+      213: 3275778326116881082
+    second: IncreaseCapacityToekn_14
+  - first:
+      213: -969799324538531610
+    second: IncreaseCapacityToekn_15
+  - first:
+      213: 3872495102542023995
+    second: IncreaseCapacityToekn_16
+  - first:
+      213: 4149361368987599629
+    second: IncreaseCapacityToekn_17
+  - first:
+      213: -6867284796373186904
+    second: IncreaseCapacityToekn_18
+  - first:
+      213: -4619436018836474400
+    second: IncreaseCapacityToekn_19
+  - first:
+      213: -3166151687235582075
+    second: IncreaseCapacityToekn_20
+  - first:
+      213: -6587731616287497505
+    second: IncreaseCapacityToekn_21
+  - first:
+      213: -748700563672152936
+    second: IncreaseCapacityToekn_22
+  - first:
+      213: 6519951389577773944
+    second: IncreaseCapacityToekn_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f823910d1cd328590800000000000000
+      internalID: -7673502912456609137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_1
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828805a705f427500800000000000000
+      internalID: 392463324602730536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_2
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675b03b40d48d7820800000000000000
+      internalID: 2917634163755496822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_3
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b14c674e169d140800000000000000
+      internalID: 4744931316284529413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_4
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8deb53b5ee0c65d90800000000000000
+      internalID: -7109282831792750888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4777bfc28154c3f0800000000000000
+      internalID: -881490004785268917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_6
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0c41b25922fbbc0800000000000000
+      internalID: -3765252739390193499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_7
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a03c515590573010800000000000000
+      internalID: 1168491230571278497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_8
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860d8defd3bb4c590800000000000000
+      internalID: -7654787591679979416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_9
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab923b0c8f236670800000000000000
+      internalID: 8530714397699644333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dfdfde13ed6c2d0800000000000000
+      internalID: -3258672974328365709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb78721e331ff48f0800000000000000
+      internalID: -553959024020191300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_12
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f53c96f64607090800000000000000
+      internalID: -8038814905177776240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_13
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f34d00e9834fbb0800000000000000
+      internalID: -4903231843029729531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_14
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2de132807e57d20800000000000000
+      internalID: 3275778326116881082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0977d07a49a82f0800000000000000
+      internalID: -969799324538531610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_16
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d057547cdddb530800000000000000
+      internalID: 3872495102542023995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_17
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d030c3b4e2e759930800000000000000
+      internalID: 4149361368987599629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_18
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a64cb4bcd082b0a0800000000000000
+      internalID: -6867284796373186904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_19
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e57b9a6a6774efb0800000000000000
+      internalID: -4619436018836474400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587c151c0d19f04d0800000000000000
+      internalID: -3166151687235582075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_21
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 268
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2e29f8ffca394a0800000000000000
+      internalID: -6587731616287497505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_22
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 268
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894cf2bddc41c95f0800000000000000
+      internalID: -748700563672152936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IncreaseCapacityToekn_23
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 264
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8730990ae358b7a50800000000000000
+      internalID: 6519951389577773944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

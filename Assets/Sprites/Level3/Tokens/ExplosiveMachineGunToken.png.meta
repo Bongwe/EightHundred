@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 0d9da7c9f386e38418f294fffa50b14d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5136036724888087891
+    second: ExplosiveMachineGunToken_0
+  - first:
+      213: -518362392145560244
+    second: ExplosiveMachineGunToken_1
+  - first:
+      213: 4521363109736200008
+    second: ExplosiveMachineGunToken_2
+  - first:
+      213: -1945476751029484222
+    second: ExplosiveMachineGunToken_3
+  - first:
+      213: -6433569813819935945
+    second: ExplosiveMachineGunToken_4
+  - first:
+      213: 8539288347722605657
+    second: ExplosiveMachineGunToken_5
+  - first:
+      213: 823882779880104056
+    second: ExplosiveMachineGunToken_6
+  - first:
+      213: 1812627717144170399
+    second: ExplosiveMachineGunToken_7
+  - first:
+      213: -7128079762511609220
+    second: ExplosiveMachineGunToken_8
+  - first:
+      213: 3647373700042561516
+    second: ExplosiveMachineGunToken_9
+  - first:
+      213: 8414812907027481262
+    second: ExplosiveMachineGunToken_10
+  - first:
+      213: 2247062612718028024
+    second: ExplosiveMachineGunToken_11
+  - first:
+      213: -5882469120467787320
+    second: ExplosiveMachineGunToken_12
+  - first:
+      213: -1024094373866823985
+    second: ExplosiveMachineGunToken_13
+  - first:
+      213: 7660439316657489999
+    second: ExplosiveMachineGunToken_14
+  - first:
+      213: -6563990211601934756
+    second: ExplosiveMachineGunToken_15
+  - first:
+      213: -6332058661395776957
+    second: ExplosiveMachineGunToken_16
+  - first:
+      213: -1689883661690968993
+    second: ExplosiveMachineGunToken_17
+  - first:
+      213: -3310949462026757236
+    second: ExplosiveMachineGunToken_18
+  - first:
+      213: -5459179036301500368
+    second: ExplosiveMachineGunToken_19
+  - first:
+      213: 5142698792976295619
+    second: ExplosiveMachineGunToken_20
+  - first:
+      213: -7365803030799398182
+    second: ExplosiveMachineGunToken_21
+  - first:
+      213: -6218559072067671939
+    second: ExplosiveMachineGunToken_22
+  - first:
+      213: 1831799414770165884
+    second: ExplosiveMachineGunToken_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35da05c703ed64740800000000000000
+      internalID: 5136036724888087891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_1
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dfd3796286ec8f0800000000000000
+      internalID: -518362392145560244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_2
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847b1680bcb1fbe30800000000000000
+      internalID: 4521363109736200008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_3
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2454b18d3374005e0800000000000000
+      internalID: -1945476751029484222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_4
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1700
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7333691475e57b6a0800000000000000
+      internalID: -6433569813819935945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95463a85285a18670800000000000000
+      internalID: 8539288347722605657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_6
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870a05fe5050f6b00800000000000000
+      internalID: 823882779880104056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_7
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fc7661e4fb72910800000000000000
+      internalID: 1812627717144170399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_8
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7248d0e839f31d90800000000000000
+      internalID: -7128079762511609220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_9
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1342
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7932a3e031e9230800000000000000
+      internalID: 3647373700042561516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2cebe51cb67c470800000000000000
+      internalID: 8414812907027481262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f48e137a8b2f2f10800000000000000
+      internalID: 2247062612718028024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_12
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1205860854d5ea0800000000000000
+      internalID: -5882469120467787320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_13
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce1135c79fa9c1f0800000000000000
+      internalID: -1024094373866823985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_14
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 984
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f484ec4c8f85f4a60800000000000000
+      internalID: 7660439316657489999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5653581ea508e4a0800000000000000
+      internalID: -6563990211601934756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_16
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ab19632320028a0800000000000000
+      internalID: -6332058661395776957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_17
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f546c2953c35c88e0800000000000000
+      internalID: -1689883661690968993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_18
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bdf96a1052d02d0800000000000000
+      internalID: -3310949462026757236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_19
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 626
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0306df727991d34b0800000000000000
+      internalID: -5459179036301500368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6ae261e498e5740800000000000000
+      internalID: 5142698792976295619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_21
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 268
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adac4bf4b2967c990800000000000000
+      internalID: -7365803030799398182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_22
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 268
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78af96a87d33b9a0800000000000000
+      internalID: -6218559072067671939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveMachineGunToken_23
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 276
+        width: 347
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78e429ccdbdb6910800000000000000
+      internalID: 1831799414770165884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

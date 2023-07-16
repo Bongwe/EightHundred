@@ -10,6 +10,7 @@ public class PistolPickup : MonoBehaviour
 	//private bool landed = false;		// Whether or not the crate has landed yet.
 	public Gun gun;
 	public ShotGun shotGun;
+	public MachineGun machineGun;
 	public Rigidbody2D pistolBullet;
 	public Sprite PistolSprite;
 	public ShotGunHolder shotGunHolder;
@@ -19,6 +20,7 @@ public class PistolPickup : MonoBehaviour
 	public Bullets BulletText;
 	public BombText bombText;
 	public string shotGunType;
+	public string machineGunType;
 	public Rigidbody2D shotGunShell;
 	public Vector2 shotGunShellForceDirection;
 
@@ -61,11 +63,21 @@ public class PistolPickup : MonoBehaviour
 				//shotGunHolder1.transform.position = shotGun.transform.position;
 				//shotGunHolder1.transform.parent = shotGun.transform;
 			}
-
 			if (shotGunShell != null)
-            {
+			{
 				shotGun.shotGunShell = shotGunShell;
 				shotGun.shotGunShellForceDirection = shotGunShellForceDirection;
+			}
+
+
+			if (machineGun != null)
+			{
+				machineGun.hasGun = true;
+				machineGun.weapon = pistolBullet;
+				machineGun.machineGunType = machineGunType;
+				machineGun.ammunition = 10000;
+				machineGun.bulletText.amoLeft = machineGun.ammunition;
+				machineGun.GetComponent<SpriteRenderer>().sprite = PistolSprite;
 			}
 			
 			themeSong.playThemeSong(pistolThemeSong);

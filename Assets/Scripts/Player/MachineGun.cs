@@ -28,6 +28,8 @@ public class MachineGun : MonoBehaviour
 
 	private IEnumerator coroutine;
 
+	private float shootingRate = 0.3f;
+
 	void Awake()
 	{
 		// Setting up the references.
@@ -48,24 +50,27 @@ public class MachineGun : MonoBehaviour
 
 				if (machineGunType == "MachineGun")
 				{
-					shootGun();
+					shootingRate = 0.3f;
+					shootMachineGun();
 					applyGunRecoil();
-					StartCoroutine(ReloadShotgun(2.0f, playerCtrl.facingRight));
+					//StartCoroutine(ReloadShotgun(2.0f, playerCtrl.facingRight));
 				}
 				else if (machineGunType == "SpreadMachineGun")
 				{
-					shootGun();
+					shootMachineGun();
 					applyGunRecoil();
-					StartCoroutine(ReloadShotgun(0.5f, playerCtrl.facingRight));
+					//StartCoroutine(ReloadShotgun(0.5f, playerCtrl.facingRight));
 				}
 				else if (machineGunType == "ExtendedMachineGun")
 				{
-					shootGun();
+					shootingRate = 1.0f;
+					shootMachineGun();
 					applyGunRecoil();
-					StartCoroutine(ReloadShotgun(0.2f, playerCtrl.facingRight));
+					//StartCoroutine(ReloadShotgun(0.2f, playerCtrl.facingRight));
 				}
 				else if (machineGunType == "ExplosiveMachineGun")
 				{
+					shootingRate = 0.1f;
 					StartCoroutine(coroutine);
 					//applyGunRecoil();
 				}
@@ -83,7 +88,7 @@ public class MachineGun : MonoBehaviour
 	{
 		yield return new WaitForSeconds(time);
 
-		AudioSource.PlayClipAtPoint(reloadSound, transform.position);
+		//AudioSource.PlayClipAtPoint(reloadSound, transform.position);
 		Rigidbody2D shotgunShellInstance = Instantiate(shotGunShell, transform.position, Quaternion.Euler(new Vector3(0, 0, 180.0f))) as Rigidbody2D;
 
 		if (playerCtrl.facingRight)
@@ -116,7 +121,7 @@ public class MachineGun : MonoBehaviour
 		StopCoroutine(coroutine);
 	}
 
-	public void shootGun()
+	public void shootMachineGun()
 	{
 		StartCoroutine(shootGunCoroutine());
 	}
@@ -144,7 +149,7 @@ public class MachineGun : MonoBehaviour
 				ammunition--;
 				bulletText.amoLeft = ammunition;
 			}
-		yield return new WaitForSeconds(0.3f);
+		yield return new WaitForSeconds(shootingRate);
 			
 		}
 

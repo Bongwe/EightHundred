@@ -157,6 +157,37 @@ public class MachineGun : MonoBehaviour
 
 	}
 
+	IEnumerator spreadMachineGun()
+	{
+		// you need to make this shoot bullets and bombs, make these bombs 
+		while (triggerIsPressed)
+		{
+			if (playerCtrl.facingRight)
+			{
+				Rigidbody2D bulletInstance = Instantiate(weapon, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
+				bulletInstance.velocity = new Vector2(speed, 0);
+
+				AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
+				ammunition--;
+				bulletText.amoLeft = ammunition;
+			}
+			else
+			{
+				Rigidbody2D bulletInstance = Instantiate(weapon, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
+				bulletInstance.velocity = new Vector2(-1 * speed, 0);
+
+				AudioSource.PlayClipAtPoint(gunSound[0], transform.position);
+				ammunition--;
+				bulletText.amoLeft = ammunition;
+			}
+			yield return new WaitForSeconds(shootingRate);
+
+		}
+
+
+
+	}
+
 	public void applyGunRecoil()
 	{
 		float yPlaneDistance = 150;

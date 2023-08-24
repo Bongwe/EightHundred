@@ -61,9 +61,9 @@ public class MachineGun : MonoBehaviour
 					applyGunRecoil();
 					//StartCoroutine(ReloadShotgun(0.5f, playerCtrl.facingRight));
 				}
-				else if (machineGunType == "ExtendedMachineGun")
+				else if (machineGunType == "IncreasedCapacityMachineGun")
 				{
-					shootingRate = 1.0f;
+					shootingRate = 0.2f;
 					shootMachineGun();
 					applyGunRecoil();
 					//StartCoroutine(ReloadShotgun(0.2f, playerCtrl.facingRight));
